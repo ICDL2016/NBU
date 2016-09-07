@@ -1,0 +1,27 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2px 0;
+  text-align: center;
+  background: #1a8d1a;
+  &__title {
+    font-size: 11px;
+    line-height: 12px;
+    color: #fff;
+  }
+  &__phone{
+    color:#fff;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: -2px;
+  }
+  &__link{
+    color:#fff;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

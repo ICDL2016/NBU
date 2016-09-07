@@ -1,0 +1,474 @@
+extends layouts/layout-sticky-normal
+block content
+    .page-title Заказы документов
+    .container
+        .documents_order
+            .documents_order__filters.documents-filters
+                .documents-filters__left
+                    label.documents-filters__item
+                        input(type="radio", name="a", checked="checked")
+                        span Новые
+                    label.documents-filters__item.documents-filters__item--ready
+                        input(type="radio", name="a")
+                        span Готовые
+                    label.documents-filters__item.documents-filters__item--issued
+                        input(type="radio", name="a")
+                        span Выданные
+                    label.documents-filters__item
+                        input(type="radio", name="a")
+                        span Все
+                .documents-filters__right
+                    label.documents-filters__item
+                        input(type="radio", name="b")
+                        span Доставка
+                    label.documents-filters__item
+                        input(type="radio", name="b", checked="checked")
+                        span Все
+                    label.documents-filters__item
+                        input(type="radio", name="b")
+                        span Получение
+            table.documents_table.documents_table--main
+                tr.documents_table__row
+                    th.documents_table__heading.w50 №
+                    th.documents_table__heading.w100 Дата
+                    th.documents_table__heading.w50 Тип
+                    th.documents_table__heading ФИО (Кому)
+                    th.documents_table__heading.w50 ПОЛ
+                    th.documents_table__heading.w130 ИФ (Латиница)
+                tr.documents_table__row
+                    td.documents_table__cell 1
+                    td.documents_table__cell
+                        | 23.04.2016
+                    td.documents_table__cell
+                        | Д
+                    td.documents_table__cell Иванову Ивану Ивановичу
+                    td.documents_table__cell MR.
+                    td.documents_table__cell Ivan Ivanov
+                tr.documents_table__row.documents_table__row--additional
+                    td.documents_table__cell(colspan="6")
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Название курса
+                                th.documents_table__heading.w130 Вид документа
+                                th.documents_table__heading.w150 Номер документа
+                                th.documents_table__heading.w130 Дата начала
+                                th.documents_table__heading.w130 Дата окончания
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span Курс «Менеджер ресторанного и гостиничного бизнеса»
+                                td.documents_table__cell
+                                    | Свидетельство
+                                td.documents_table__cell
+                                    span No AB 001573
+                                td.documents_table__cell
+                                    span 23.01.2016
+                                td.documents_table__cell
+                                    span 23.04.2016
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading.w100 Индекс
+                                th.documents_table__heading.w100 Страна
+                                th.documents_table__heading.w100 Область
+                                th.documents_table__heading.w100 Город
+                                th.documents_table__heading Улица
+                                th.documents_table__heading.w70 Дом
+                                th.documents_table__heading.w70 Корпус
+                                th.documents_table__heading.w100 Квартира
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span 123456
+                                td.documents_table__cell
+                                    span Россия
+                                td.documents_table__cell
+                                    span Москва
+                                td.documents_table__cell
+                                    span Москва
+                                td.documents_table__cell
+                                    span Проспект Мира
+                                td.documents_table__cell
+                                    span 150
+                                td.documents_table__cell
+                                    span
+                                td.documents_table__cell
+                                    span
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Комментарий
+                                th.documents_table__heading.w160 Идентификатор
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span Просьба отправить свидетельство после 15 мая, т. к. я сейчас нахожусь в командировке и не смогу получить почту
+                                td.documents_table__cell
+                                    span 34132456
+                            tr.documents_table__row.documents_table__row--padding
+                                th.documents_table__heading.js-toggle-row
+                                th.documents_table__heading(colspan=2)
+                                    .pull-left
+                                        a.btn(href="") Изменить
+                                        a.btn.fancybox(href="#document") Печать
+                                        a.btn.fancybox(href="#post") Почта
+                                    .pull-right
+                                        a.btn(href="") Готов
+                                        a.btn(href="") Выдан
+                tr.documents_table__row
+                    td.documents_table__cell 2
+                    td.documents_table__cell
+                        | 23.04.2016
+                    td.documents_table__cell
+                        | Д
+                    td.documents_table__cell Иванову Ивану Ивановичу
+                    td.documents_table__cell MR.
+                    td.documents_table__cell Ivan Ivanov
+                tr.documents_table__row.documents_table__row--additional
+                    td.documents_table__cell(colspan="6")
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Название курса
+                                th.documents_table__heading.w130 Вид документа
+                                th.documents_table__heading.w150 Номер документа
+                                th.documents_table__heading.w130 Дата начала
+                                th.documents_table__heading.w130 Дата окончания
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span Курс «Менеджер ресторанного и гостиничного бизнеса»
+                                td.documents_table__cell
+                                    | Свидетельство
+                                td.documents_table__cell
+                                    span No AB 001573
+                                td.documents_table__cell
+                                    span 23.01.2016
+                                td.documents_table__cell
+                                    span 23.04.2016
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading.w100 Индекс
+                                th.documents_table__heading.w100 Страна
+                                th.documents_table__heading.w100 Область
+                                th.documents_table__heading.w100 Город
+                                th.documents_table__heading Улица
+                                th.documents_table__heading.w70 Дом
+                                th.documents_table__heading.w70 Корпус
+                                th.documents_table__heading.w100 Квартира
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span 123456
+                                td.documents_table__cell
+                                    span Россия
+                                td.documents_table__cell
+                                    span Москва
+                                td.documents_table__cell
+                                    span Москва
+                                td.documents_table__cell
+                                    span Проспект Мира
+                                td.documents_table__cell
+                                    span 150
+                                td.documents_table__cell
+                                    span
+                                td.documents_table__cell
+                                    span
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Комментарий
+                                th.documents_table__heading.w160 Идентификатор
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span Просьба отправить свидетельство после 15 мая, т. к. я сейчас нахожусь в командировке и не смогу получить почту
+                                td.documents_table__cell
+                                    span 34132456
+                            tr.documents_table__row.documents_table__row--padding
+                                th.documents_table__heading.js-toggle-row
+                                th.documents_table__heading(colspan=2)
+                                    .pull-left
+                                        a.btn(href="") Изменить
+                                        a.btn.fancybox(href="#document") Печать
+                                        a.btn.fancybox(href="#post") Почта
+                                    .pull-right
+                                        a.btn(href="") Готов
+                                        a.btn(href="") Выдан
+                tr.documents_table__row.documents_table__row--updated
+                    td.documents_table__cell 3
+                    td.documents_table__cell
+                        | 23.04.2016
+                    td.documents_table__cell
+                        | Д
+                    td.documents_table__cell Иванову Ивану Ивановичу
+                    td.documents_table__cell MR.
+                    td.documents_table__cell Ivan Ivanov
+                tr.documents_table__row.documents_table__row--additional.documents_table__row--updated
+                    td.documents_table__cell(colspan="6")
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Название курса
+                                th.documents_table__heading.w130 Вид документа
+                                th.documents_table__heading.w150 Номер документа
+                                th.documents_table__heading.w130 Дата начала
+                                th.documents_table__heading.w130 Дата окончания
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span Курс «Менеджер ресторанного и гостиничного бизнеса»
+                                td.documents_table__cell
+                                    | Свидетельство
+                                td.documents_table__cell
+                                    span No AB 001573
+                                td.documents_table__cell
+                                    span 23.01.2016
+                                td.documents_table__cell
+                                    span 23.04.2016
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading.w100 Индекс
+                                th.documents_table__heading.w100 Страна
+                                th.documents_table__heading.w100 Область
+                                th.documents_table__heading.w100 Город
+                                th.documents_table__heading Улица
+                                th.documents_table__heading.w70 Дом
+                                th.documents_table__heading.w70 Корпус
+                                th.documents_table__heading.w100 Квартира
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span 123456
+                                td.documents_table__cell
+                                    span Россия
+                                td.documents_table__cell
+                                    span Москва
+                                td.documents_table__cell
+                                    span Москва
+                                td.documents_table__cell
+                                    span Проспект Мира
+                                td.documents_table__cell
+                                    span 150
+                                td.documents_table__cell
+                                    span
+                                td.documents_table__cell
+                                    span
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Комментарий
+                                th.documents_table__heading.w160 Идентификатор
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span Просьба отправить свидетельство после 15 мая, т. к. я сейчас нахожусь в командировке и не смогу получить почту
+                                td.documents_table__cell
+                                    span 34132456
+                            tr.documents_table__row.documents_table__row--padding
+                                th.documents_table__heading.js-toggle-row
+                                th.documents_table__heading(colspan=2)
+                                    .pull-left
+                                        a.btn(href="") Изменить
+                                        a.btn.fancybox(href="#document") Печать
+                                        a.btn.fancybox(href="#post") Почта
+                                    .pull-right
+                                        a.btn(href="") Готов
+                                        a.btn(href="") Выдан
+                tr.documents_table__row.documents_table__row--edit
+                    td.documents_table__cell 4
+                    td.documents_table__cell
+                        | 23.04.2016
+                    td.documents_table__cell
+                        select.m-r-5
+                            option -
+                            option(selected="selected") Д
+                            option П
+                    td.documents_table__cell(contenteditable="true")
+                        span Иванову Ивану Ивановичу
+                    td.documents_table__cell(contenteditable="true")
+                        span MR.
+                    td.documents_table__cell(contenteditable="true")
+                        span Ivan Ivanov
+                tr.documents_table__row.documents_table__row--additional.documents_table__row--edit
+                    td.documents_table__cell(colspan="6")
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Название курса
+                                th.documents_table__heading.w130 Вид документа
+                                th.documents_table__heading.w150 Номер документа
+                                th.documents_table__heading.w130 Дата начала
+                                th.documents_table__heading.w130 Дата окончания
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell(contenteditable="true")
+                                    span Курс «Менеджер ресторанного и гостиничного бизнеса»
+                                td.documents_table__cell
+                                    select
+                                        option -
+                                        option(selected="selected") Свидетельство
+                                        option Диплом
+                                td.documents_table__cell(contenteditable="true")
+                                    span No AB 001573
+                                td.documents_table__cell(contenteditable="true")
+                                    span 23.01.2016
+                                td.documents_table__cell(contenteditable="true")
+                                    span 23.04.2016
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading.w100 Индекс
+                                th.documents_table__heading.w100 Страна
+                                th.documents_table__heading.w100 Область
+                                th.documents_table__heading.w100 Город
+                                th.documents_table__heading Улица
+                                th.documents_table__heading.w70 Дом
+                                th.documents_table__heading.w70 Корпус
+                                th.documents_table__heading.w100 Квартира
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell(contenteditable="true")
+                                    span 123456
+                                td.documents_table__cell(contenteditable="true")
+                                    span Россия
+                                td.documents_table__cell(contenteditable="true")
+                                    span Москва
+                                td.documents_table__cell(contenteditable="true")
+                                    span Москва
+                                td.documents_table__cell(contenteditable="true")
+                                    span Проспект Мира
+                                td.documents_table__cell(contenteditable="true")
+                                    span 150
+                                td.documents_table__cell(contenteditable="true")
+                                    span
+                                td.documents_table__cell(contenteditable="true")
+                                    span
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Комментарий
+                                th.documents_table__heading.w160 Идентификатор
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell(contenteditable="true")
+                                    span Просьба отправить свидетельство после 15 мая, т. к. я сейчас нахожусь в командировке и не смогу получить почту
+                                td.documents_table__cell(contenteditable="true")
+                                    span 34132456
+                            tr.documents_table__row.documents_table__row--padding
+                                th.documents_table__heading.js-toggle-row
+                                th.documents_table__heading(colspan=2)
+                                    .pull-left
+                                        a.btn(href="") Изменить
+                                        a.btn.fancybox(href="#document") Печать
+                                        a.btn.fancybox(href="#post") Почта
+                                    .pull-right
+                                        a.btn(href="") Готов
+                                        a.btn(href="") Выдан
+                tr.documents_table__row.documents_table__row--disabled
+                    td.documents_table__cell 5
+                    td.documents_table__cell
+                        | 23.04.2016
+                    td.documents_table__cell
+                        | Д
+                    td.documents_table__cell Иванову Ивану Ивановичу
+                    td.documents_table__cell MR.
+                    td.documents_table__cell Ivan Ivanov
+                tr.documents_table__row.documents_table__row--additional.documents_table__row--disabled
+                    td.documents_table__cell(colspan="6")
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Название курса
+                                th.documents_table__heading.w130 Вид документа
+                                th.documents_table__heading.w150 Номер документа
+                                th.documents_table__heading.w130 Дата начала
+                                th.documents_table__heading.w130 Дата окончания
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span Курс «Менеджер ресторанного и гостиничного бизнеса»
+                                td.documents_table__cell
+                                    | Свидетельство
+                                td.documents_table__cell
+                                    span No AB 001573
+                                td.documents_table__cell
+                                    span 23.01.2016
+                                td.documents_table__cell
+                                    span 23.04.2016
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading.w100 Индекс
+                                th.documents_table__heading.w100 Страна
+                                th.documents_table__heading.w100 Область
+                                th.documents_table__heading.w100 Город
+                                th.documents_table__heading Улица
+                                th.documents_table__heading.w70 Дом
+                                th.documents_table__heading.w70 Корпус
+                                th.documents_table__heading.w100 Квартира
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span 123456
+                                td.documents_table__cell
+                                    span Россия
+                                td.documents_table__cell
+                                    span Москва
+                                td.documents_table__cell
+                                    span Москва
+                                td.documents_table__cell
+                                    span Проспект Мира
+                                td.documents_table__cell
+                                    span 150
+                                td.documents_table__cell
+                                    span
+                                td.documents_table__cell
+                                    span
+                        table.documents_table
+                            tr.documents_table__row
+                                th.documents_table__heading
+                                th.documents_table__heading Комментарий
+                                th.documents_table__heading.w160 Идентификатор
+                            tr.documents_table__row
+                                td.documents_table__cell
+                                td.documents_table__cell
+                                    span Просьба отправить свидетельство после 15 мая, т. к. я сейчас нахожусь в командировке и не смогу получить почту
+                                td.documents_table__cell
+                                    span 34132456
+                            tr.documents_table__row.documents_table__row--padding
+                                th.documents_table__heading.js-toggle-row
+                                th.documents_table__heading(colspan=2)
+                                    .pull-left
+                                        a.btn(href="") Изменить
+                                        a.btn.fancybox(href="#document") Печать
+                                        a.btn.fancybox(href="#post") Почта
+                                    .pull-right
+                                        a.btn(href="") Готов
+                                        a.btn(href="") Выдан
+            a.documents_order__add.js-add-document-row(href="")
+                .fa.fa-plus
+            p Примеры активностей кнопок
+            .documents_table
+                .pull-left
+                    a.btn.btn-ready(href="") Готов
+                    a.btn.btn-save(href="") Сохранить
+                    a.btn.btn-pass(href="") Выдан
+    div(style="display:none")
+        div#document
+            .container
+                .img-responsive.m-b-20
+                    img(src="https://code.org/images/hour_of_code_certificate.jpg")
+                .bill-form.bill-form--nm
+                    a.btn.btn-block(href="") Распечатать
+        div#post
+            .container
+                .img-responsive.m-b-20
+                    img(src="http://sydneylanguagesolutions.com.au/wp-content/uploads/2015/05/Final-Certificate-2012-Large1-1024x726.jpg")
+                .bill-form.bill-form--nm
+                    a.btn.btn-block(href="") Распечатать
+
+

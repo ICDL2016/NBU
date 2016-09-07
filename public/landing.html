@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/i/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/i/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/i/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/i/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/i/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/i/favicon/apple-touch-icon-120x120.png">
+    <link rel="icon" type="image/png" href="assets/i/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/i/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/i/favicon/favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#008000">
+    <meta name="msapplication-TileImage" content="assets/i/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#008000">
+    <!--if lt IE 9script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+    -->
+    <!--if lt IE 9
+    script(src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js')
+    script(src='//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js')
+    script(src='//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
+    -->
+    <title>gulpApp</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <header class="header"><a href="" class="header__logo"><img src="assets/i/logo_small.png"></a>
+        <div class="header__text">
+          <h1 class="header__title">NEW BUSINESS UNIVERSITY</h1>
+          <div class="header__translation">НОВЫЙ БИЗНЕС УНИВЕРСИТЕТ</div>
+        </div>
+      </header>
+    </div>
+    <div class="header__nav nav">
+      <div class="header__actions">
+        <div class="header__toggle js-toggler">
+          <div class="fa fa-bars"></div>
+        </div>
+      </div>
+      <div class="nav__authorization authorization-tabs js-tabs">
+        <div class="authorization-tabs__headings">
+          <div class="authorization-tabs__header js-tabs-head active">Вход</div>
+        </div>
+        <div class="authorization-tabs__content">
+          <div class="authorization-tabs__item js-tabs-item active">
+            <form>
+              <input type="email" placeholder="E-mail">
+              <input type="password" placeholder="Пароль">
+              <button type="submit">Вход</button><a href="" class="authorization-tabs__link">Забыли пароль?</a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link js-authorize">Вход</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">О NBU</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+      </ul>
+      <form class="custom-search-input">
+        <input type="text">
+        <button type="submit" class="fa fa-search"></button>
+      </form>
+    </div>
+    <main class="main">
+      <div class="landing-picture">
+        <div class="landing-picture__img"><img src="assets/i/business1.jpg"><span>Курс "Маркетинговое исследование"</span></div>
+      </div>
+      <div class="container container_hours">
+        <div class="label-hours">1000ч</div>
+        <div class="price-hours">
+          <div class="price-hours__old">3000 <i class="fa fa-rub"></i></div>
+          <div class="price-hours__current">6000 <i class="fa fa-rub"></i></div>
+        </div>
+      </div>
+      <div class="page-title page-title_landing">ПОДАЙТЕ ЗАЯВКУ И ПОЛУЧИТЕ СКИДКУ 50%</div>
+      <form class="landing-form">
+        <div class="landing-form__wrap">
+          <div class="landing-form__in">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <input type="email" placeholder="E-mail">
+            <textarea placeholder="Комментарий/Вопрос"></textarea>
+            <div class="label-discount"><span>50%</span>
+              <div class="arc-wrap"><span class="w0">С</span><span class="w1">к</span><span class="w2">и</span><span class="w3">д</span><span class="w4">к</span><span class="w5">а</span><span class="w6"></span><span class="w7">в</span><span class="w8"></span><span class="w9">э</span><span class="w10">т</span><span class="w11">о</span><span class="w12">м</span><span class="w13"></span><span class="w14">м</span><span class="w15">е</span><span class="w16">с</span><span class="w17">я</span><span class="w18">ц</span><span class="w19">е</span><span class="w20"></span><span class="w21">!</span><span class="w22"></span></div><img src="assets/i/label-discount.png">
+            </div>
+          </div>
+        </div>
+        <div class="landing-form__in">
+          <button type="submit" class="btn btn-lg">Подать заявку</button>
+        </div>
+      </form>
+      <div class="landing-img-single">
+        <div class="landing-img-single__in"><img src="assets/i/bg-users.png"></div>
+      </div>
+      <div class="page-title page-title_green">Перспективное образование</div>
+      <div class="page-title page-title_landing">Лицензированные программы обучения</div>
+      <div class="container">
+        <div class="contacts-pictures contacts-pictures_landing contacts-pictures_lg">
+          <div class="contacts-pictures__item"><a href="assets/i/certificate.png" rel="contacts" class="contacts-pictures__img fancybox"><img src="assets/i/certificate.png"></a></div>
+          <div class="contacts-pictures__item"><a href="assets/i/diplom.jpeg" rel="contacts" class="contacts-pictures__img fancybox"><img src="assets/i/diplom.jpeg"></a></div>
+          <div class="contacts-pictures__item"><a href="assets/i/test.jpeg" rel="contacts" class="contacts-pictures__img fancybox"><img src="assets/i/test.jpeg"></a></div>
+        </div>
+      </div>
+      <div class="page-title page-title_landing">Лицензия на образовательную деятельность №034972</div>
+      <div class="page-title page-title_green">Современные технологии обучения</div>
+      <div class="landing-img-single landing-img-single_ipad">
+        <div class="landing-img-single__in"><img src="assets/i/bg-ipad_new.png"></div>
+      </div>
+      <div class="page-title page-title_margin">Курс "Маркетинговое исследование"</div>
+      <div class="course-description">
+        Полное описание материала объемом до 10000 символов с медиа данными (картинки, аудио, видео). Полное описание
+        материала объемом до 10000 символов с медиа данными (картинки, аудио, видео).Полное описание материала
+         объемом до 10000 символов с медиа данными (картинки, аудио, видео). Полное описание материала объемомдо
+         10000 символов с медиа данными (картинки, аудио, видео). Полное описание материала объемом до 10000 символов
+         с медиа данными (картинки, аудио, видео). Полное описание материала объемом до 10000 символов с медиа данными
+         (картинки, аудио, видео).Полное описание материала объемом до 10000 символов с медиа данными (картинки, аудио,
+        видео). Полное описание материала объемомдо 10000 символов с медиа данными (картинки, аудио, видео).
+      </div>
+      <div class="page-title page-title_landing">ПОДАЙТЕ ЗАЯВКУ И ПОЛУЧИТЕ СКИДКУ 50%</div>
+      <form class="landing-form">
+        <div class="landing-form__wrap">
+          <div class="landing-form__in">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <input type="email" placeholder="E-mail">
+            <textarea placeholder="Комментарий/Вопрос"></textarea>
+            <div class="label-discount"><span>50%</span><img src="assets/i/label-discount.png"></div>
+          </div>
+        </div>
+        <div class="landing-form__in">
+          <button type="submit" class="btn btn-lg">Подать заявку</button>
+        </div>
+      </form>
+      <div class="container">
+        <ul class="labels-list">
+          <li class="labels-list__item"><i class="labels-list__img"><img src="assets/i/user1.png"></i></li>
+          <li class="labels-list__item">
+            <!--i.label-tablet--><i class="label-list__img"><img src="assets/i/label-tablet.png"></i>
+          </li>
+          <li class="labels-list__item"><i class="labels-list__img"><img src="assets/i/user2.png"></i></li>
+        </ul>
+        <div class="socials socials_landing"><a href="" class="social_fb"><i class="fa fa-facebook"></i></a><a href="" class="social_vk"><i class="fa fa-vk"></i></a><a href="" class="social_od"><i class="fa fa-odnoklassniki"></i></a><a href="" class="social_tw"><i class="fa fa-twitter"></i></a></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__phone">+7 926 214 90 90</div><a href="" class="footer__link">Контакты</a>
+        <div class="footer__title">NBU <br>  2001-2016</div>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/js/plugins/jquery-1.9.1.min.js"></script>
+  <script src="assets/js/plugins/jquery.fancybox.pack.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>

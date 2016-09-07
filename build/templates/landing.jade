@@ -1,0 +1,111 @@
+extends layouts/layout
+block content
+    .landing-picture
+        .landing-picture__img
+            img(src="assets/i/business1.jpg")
+            span Курс "Маркетинговое исследование"
+    .container.container_hours
+        .label-hours 1000ч
+        .price-hours
+            .price-hours__old 3000 <i class="fa fa-rub"></i>
+            .price-hours__current 6000 <i class="fa fa-rub"></i>
+    .page-title.page-title_landing ПОДАЙТЕ ЗАЯВКУ И ПОЛУЧИТЕ СКИДКУ 50%
+    form.landing-form
+        .landing-form__wrap
+            .landing-form__in
+                input(type="text",placeholder="Имя")
+                input(type="text",placeholder="Телефон")
+                input(type="email", placeholder="E-mail")
+                textarea(placeholder="Комментарий/Вопрос")
+                .label-discount
+                    span 50%
+                    .arc-wrap
+                        span.w0 С
+                        span.w1 к
+                        span.w2 и
+                        span.w3 д
+                        span.w4 к
+                        span.w5 а
+                        span.w6
+                        span.w7 в
+                        span.w8
+                        span.w9 э
+                        span.w10 т
+                        span.w11 о
+                        span.w12 м
+                        span.w13
+                        span.w14 м
+                        span.w15 е
+                        span.w16 с
+                        span.w17 я
+                        span.w18 ц
+                        span.w19 е
+                        span.w20
+                        span.w21 !
+                        span.w22
+                    img(src="assets/i/label-discount.png")
+        .landing-form__in
+            button.btn.btn-lg(type="submit") Подать заявку
+    .landing-img-single
+        .landing-img-single__in
+            img(src="assets/i/bg-users.png")
+    .page-title.page-title_green Перспективное образование
+    .page-title.page-title_landing Лицензированные программы обучения
+    .container
+        .contacts-pictures.contacts-pictures_landing.contacts-pictures_lg
+            .contacts-pictures__item
+                a.contacts-pictures__img.fancybox(href="assets/i/certificate.png",rel="contacts")
+                    img(src="assets/i/certificate.png")
+            .contacts-pictures__item
+                a.contacts-pictures__img.fancybox(href="assets/i/diplom.jpeg",rel="contacts")
+                    img(src="assets/i/diplom.jpeg")
+            .contacts-pictures__item
+                a.contacts-pictures__img.fancybox(href="assets/i/test.jpeg",rel="contacts")
+                    img(src="assets/i/test.jpeg")
+    .page-title.page-title_landing Лицензия на образовательную деятельность №034972
+    .page-title.page-title_green Современные технологии обучения
+    .landing-img-single.landing-img-single_ipad
+        .landing-img-single__in
+            img(src="assets/i/bg-ipad_new.png")
+    .page-title.page-title_margin Курс "Маркетинговое исследование"
+    .course-description Полное описание материала объемом до 10000 символов с медиа данными (картинки, аудио, видео). Полное описание
+        | материала объемом до 10000 символов с медиа данными (картинки, аудио, видео).Полное описание материала
+        |  объемом до 10000 символов с медиа данными (картинки, аудио, видео). Полное описание материала объемомдо
+        |  10000 символов с медиа данными (картинки, аудио, видео). Полное описание материала объемом до 10000 символов
+        |  с медиа данными (картинки, аудио, видео). Полное описание материала объемом до 10000 символов с медиа данными
+        |  (картинки, аудио, видео).Полное описание материала объемом до 10000 символов с медиа данными (картинки, аудио,
+        | видео). Полное описание материала объемомдо 10000 символов с медиа данными (картинки, аудио, видео).
+    .page-title.page-title_landing ПОДАЙТЕ ЗАЯВКУ И ПОЛУЧИТЕ СКИДКУ 50%
+    form.landing-form
+        .landing-form__wrap
+            .landing-form__in
+                input(type="text",placeholder="Имя")
+                input(type="text",placeholder="Телефон")
+                input(type="email", placeholder="E-mail")
+                textarea(placeholder="Комментарий/Вопрос")
+                .label-discount
+                    span 50%
+                    img(src="assets/i/label-discount.png")
+        .landing-form__in
+            button.btn.btn-lg(type="submit") Подать заявку
+    .container
+        ul.labels-list
+            li.labels-list__item
+                i.labels-list__img
+                    img(src="assets/i/user1.png")
+            li.labels-list__item
+                //i.label-tablet
+                i.label-list__img
+                    img(src="assets/i/label-tablet.png")
+            li.labels-list__item
+                i.labels-list__img
+                    img(src="assets/i/user2.png")
+        .socials.socials_landing
+            a.social_fb(href="")
+                i.fa.fa-facebook
+            a.social_vk(href="")
+                i.fa.fa-vk
+            a.social_od(href="")
+                i.fa.fa-odnoklassniki
+            a.social_tw(href="")
+                i.fa.fa-twitter

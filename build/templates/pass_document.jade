@@ -1,0 +1,16 @@
+extends layouts/layout
+block content
+    .page-title Документ о прохождении курса обучения
+    .container.bill
+        a.fancybox(href="https://code.org/images/hour_of_code_certificate.jpg")
+            img(src="https://code.org/images/hour_of_code_certificate.jpg")
+        p.text-center.text-pass
+            | Текст объяснения по корректированию данных при необходимости Комментарии по заказу отправки по почте и прочая необходимая информация После отправки ставиться галочка в заказе «Доставлено»
+            | и поля с вводом адреса и кнопка «Заказать доставку» не демонстрируются Комментарий о том что электронная форма документа будет проверенна перед печатью
+            | И печатная форма соответственно может отличаться от электронной датами и пр.
+        .bill-form
+            a.btn.btn-block(href="") Редактировать документ
+            a.btn.btn-block(href="") Распечатать
+            a.btn.btn-block(href="") Сохранить
+            a.btn.btn-block(href="") Получить в учебном центре
+            a.btn.btn-block(href="") Заказать доставку по почте

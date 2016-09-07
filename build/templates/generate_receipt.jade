@@ -1,0 +1,32 @@
+extends layouts/layout
+block content
+    .page-title Сформировать квитанцию
+    .container.bill
+        .course.course_user
+            .course__item
+                a.course__prev(href="")
+                    .course__img
+                        img(src="assets/i/business1.jpg")
+                    .course__text Курс “Маркетинговое исследование”
+                .course__price
+                    | 4500
+                    | &nbsp;
+                    span.fa.fa-rub
+        form.bill-form
+            label
+                span ФИО*
+                input(type="text")
+            label
+                span E-mail*
+                input(type="email")
+            label
+                span Телефон*
+                input(type="tel")
+            label
+                span Адрес
+                input(type="text")
+            label
+                span Комментарии
+                textarea
+            a(href='') Оплачивая услугу, Вы соглашаетесь с условиями договора оферты.
+            button(type="submit")  Сформировать квитанцию

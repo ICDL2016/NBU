@@ -1,0 +1,45 @@
+.filters.js-filters
+    a.fa.fa-close.js-filters-close
+    form.filters__search.filters-search
+        input(type="text", placeholder='Искать по названию')
+        button.fa.fa-arrow-right(type="submit")
+    form.filters__select-form
+        .filters__block.filters-block.js-filters-block
+            .filters-block__title Материалы
+            .filters-block__options
+                span.filters-block__item(data-val='new').filters-block__item_wide Новые
+                span.filters-block__item(data-val='popular').filters-block__item_wide.active Популярные
+            input(type="hidden",name="materials")
+        .filters__block.filters-block.js-filters-block
+            .filters-block__title Материалы
+            .filters-block__options
+                span.filters-block__item(data-val='ru') RU
+                span.filters-block__item(data-val='en') EN
+                span.filters-block__item(data-val='es') ES
+                span.filters-block__item(data-val='ge') GE
+                span.filters-block__item(data-val='fr') FR
+                span.filters-block__item(data-val='it') IT
+                span.filters-block__item(data-val='po') PO
+                span.filters-block__item(data-val='ar') AR
+                span.filters-block__item(data-val='ma') MA
+            input(type="hidden",name="lang")
+        .filters__block.filters-block.js-filters-block
+            .filters-block__title Тип
+            .filters-block__options
+                span.filters-block__item(data-val='1') Литература
+                span.filters-block__item(data-val='2') Учебники
+                span.filters-block__item(data-val='3') Фильмы
+                span.filters-block__item(data-val='4') Песни
+                span.filters-block__item(data-val='5') Диалоги
+                span.filters-block__item(data-val='6') Разное
+            input(type="hidden",name="type")
+        .filters__block.filters-block.js-filters-block
+            .filters-block__title Уровень
+            .filters-block__options
+                span.filters-block__item(data-val='1') 0
+                span.filters-block__item(data-val='2') A
+                span.filters-block__item(data-val='3') B
+                span.filters-block__item(data-val='4') C
+            input(type="hidden",name="level")
+        button.btn.btn-lg.btn-2lg(type="submit") Искать
+        a(href="").js-clear-filters Отменить фильтр <br> (Показать все)

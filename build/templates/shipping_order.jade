@@ -1,0 +1,39 @@
+extends layouts/layout
+block content
+    .page-title Заказ доставки документа по почте
+    .container.bill
+
+        p.text-center.text-pass
+            | Комментарии по заказу отправки по почте и прочая необходимая информация После отправки формы — сообщение «Ваша заявка на отправку документа принята и в ближайшее время будет обработана»
+        form.bill-form
+            label
+                span ФИО
+                input(type="text")
+            label
+                span Индекс
+                input(type="text")
+            label
+                span Страна
+                input(type="text")
+            label
+                span Область
+                input(type="text")
+            label
+                span Город
+                input(type="text")
+            label
+                span Улица
+                input(type="text")
+            label
+                span Дом
+                input(type="text")
+            label
+                span Корпус
+                input(type="text")
+            label
+                span Квартира
+                input(type="text")
+            label
+                span Комментарий
+                textarea
+            button(type="submit")  Заказать доставку

@@ -1,0 +1,33 @@
+extends layouts/layout
+block content
+    .page-title Документ о прохождении курса обучения
+    .container.bill
+        h4.text-center
+            | Курс «ЖУРНАЛИСТ ПРОФЕССИОНАЛ»
+        p.text-center
+            | ВНИМАНИЕ!
+        p.text-pass
+            | 1) Ф.И.О. Заполняется в дательном падеже.
+            br
+            | Пример: ИВАНОВУ ИВАНУ ИВАНОВИЧУ/ ИВАНОВОЙ МАРИИ ИВАНОВНЕ
+        p.text-pass
+            | 2) Имя Фамилия латинскими буквами. (первое Имя, потом Фамилия) Заполняется латинскими буквами в именительном падеже.
+            br
+            | Пример: IVAN IVANOV
+        form.bill-form
+            label
+                span ФИО (в дательном падеже)
+                input(type="text")
+            label
+                span Имя Фамилия (латинскими буквами)
+                input(type="text")
+            label
+                span Пол
+                div.text-center
+                    label
+                        input(type="radio", name="gender")
+                        | Мужской
+                    label
+                        input(type="radio", name="gender")
+                        | Женский
+            button(type="submit")  Сформировать документ

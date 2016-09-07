@@ -1,0 +1,19 @@
+extends layouts/layout
+block content
+    .page-title Заказ получения документа в учебном центре
+    .container.bill
+        p.text-center.text-pass
+            | Комментарии по заказу получения документа в учебном центре
+            br
+            | Адрес (ссылка на контакты) время работы и прочая необходимая информация После отправки формы — сообщение «Ваша заявка принята и в ближайшее время будет обработана»
+        form.bill-form
+            label
+                span ФИО
+                input(type="text")
+            label
+                span Желаемая дата и время получения
+                input(type="date")
+            label
+                span Комментарий
+                textarea
+            button(type="submit")  Заказать получение
