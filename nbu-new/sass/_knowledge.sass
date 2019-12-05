@@ -1,0 +1,28 @@
+.knowledge
+    &-title
+        &::before
+            left: 0
+        &::after
+            right: 0
+    &-subtitle
+        margin-bottom: 20px
+        &::after, &::before
+            display: none
+    &-about
+        padding-left: 30px
+        font-size: 20px
+        color: $text
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            height: 100%
+            width: 6px
+            background: #a9d4b4
+    &-img
+        display: flex
+        justify-content: space-evenly
+        margin: 30px auto
+        padding: 10px
+        border: 1px solid $light

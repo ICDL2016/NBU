@@ -1,0 +1,89 @@
+body
+    margin-bottom: 250px
+    font-family: "Helvetica Neue", sans-serif
+
+ul, li
+    margin: 0
+    padding: 0
+    list-style: none
+
+a:hover
+    text-decoration: none
+
+button:focus
+    outline: none
+
+input
+    border: none
+    outline: none
+    &:hover, &:focus, &:active
+        outline: none!important
+
+input:active, input:focus, textarea:active, textarea:focus
+    outline: none!important
+
+input:focus, textarea:focus
+    outline-style: none
+    outline-width: 0 !important
+    outline-color: transparent !important
+
+.button
+    display: block
+    text-align: center
+    padding: 10px 5px 10px 15px
+    width: 350px
+    font-size: 18px
+    line-height: 1.2
+    color: #fff
+    border-radius: 30px
+    background: $orange
+    box-shadow: 3px 3px 13px -2px #000
+    font-weight: bold
+    font-weight: 700
+    overflow: hidden
+    position: relative
+    transition: background .3s
+    span
+        display: block
+        text-align: center
+        font-weight: 400
+        font-weight: normal
+    &::before
+        content: ''
+        position: absolute
+        height: 100%
+        width: 30px
+        background: $light
+        left: 0
+        top: 0
+        transition: background .3s
+    &:hover
+        color: #fff
+        background: $dark
+        &::before
+            background: $orange
+
+.title
+    text-align: center
+    position: relative
+    color: $text
+    font-size: 32px
+    font-family: Constantine, sans-serif
+    &::before
+        content: ''
+        position: absolute
+        width: 100px
+        height: 1px
+        background: $dark
+        left: 100px
+        top: 50%
+        transform: translateY(-50%)
+    &::after
+        content: ''
+        position: absolute
+        width: 100px
+        height: 1px
+        background: $dark
+        right: 100px
+        top: 50%
+        transform: translateY(-50%)

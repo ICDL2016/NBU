@@ -1,0 +1,53 @@
+.teachers
+    &-title
+        &::before
+            left: 25px
+        &::after
+            right: 25px
+    &-subtitle
+        margin-bottom: 30px
+        &::after, &::before
+            display: none
+    &-blocks
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        .owl-nav
+            height: 0!important
+            display: block!important
+    &-block
+        text-align: center
+        margin: 15px auto
+        width: 140px
+    &-img
+        margin-bottom: 10px
+        height: 180px
+        width: 100%
+        &1
+            background: url(../img/teacher/teacher1.png) center no-repeat
+            background-size: cover
+        &2
+            background: url(../img/teacher/teacher2.png) center no-repeat
+            background-size: cover
+        &3
+            background: url(../img/teacher/teacher3.png) center no-repeat
+            background-size: cover
+        &4
+            background: url(../img/teacher/teacher4.png) center no-repeat
+            background-size: cover
+    &-name
+        font-size: 18px
+        color: #49984c
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 30px
+            height: 2px
+            background: #49984c
+    &-position
+        color: #6c6c6c
+        font-size: 13px

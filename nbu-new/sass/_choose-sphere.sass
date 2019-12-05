@@ -1,0 +1,30 @@
+.choose-sphere
+    &__title
+        margin-bottom: 20px
+    &__slider
+        .owl-nav
+            height: 0!important
+            display: block!important
+    &__slide
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding: 20px 10px 10px
+        text-align: center
+        border: 1px solid $light
+        width: 180px
+        height: 205px
+        color: $text
+        line-height: 1.2
+        font-size: 19px
+        transition: background .3s
+        cursor: pointer
+        svg
+            margin-bottom: 15px
+            height: 70px
+            width: 70px
+        &:hover
+            color: #fff
+            background: linear-gradient(to left, $light 0, $dark 100%)
+            .fil1
+                fill: white

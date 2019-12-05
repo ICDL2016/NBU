@@ -1,0 +1,35 @@
+.profit
+    &-title
+        margin-bottom: 20px
+        &::before
+            left: 50px
+        &::after
+            right: 50px
+    &-blocks
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &-block
+        text-align: center
+        padding: 40px 15px 10px
+        width: 150px
+        height: 220px
+        border: 1px solid rgba(#ccc, .5)
+        cursor: pointer
+        transition: background .3s
+        &:hover
+            background: $light
+            .profit-descr
+                color: #fff
+            .fil1
+                fill: white
+    &-icon
+        margin-bottom: 20px
+        svg
+            height: 60px
+            width: 60px
+    &-descr
+        font-size: 15px
+        line-height: 1.2
+        text-align: center
+        color: #545454

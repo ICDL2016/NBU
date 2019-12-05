@@ -1,0 +1,60 @@
+.about
+    background: url(../img/bg/about-bg.png)
+    padding: 40px 0 100px
+    &-title
+        margin-bottom: 40px
+        color: #fff
+        &::before
+            background: #fff
+            left: 150px
+        &::after
+            background: #fff
+            right: 150px
+    &-advantages
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &-icon
+        margin-bottom: 5px
+        width: 70px
+        img
+            width: 100%
+    &-text
+        line-height: 1.2
+        text-align: center
+        font-size: 20px
+    &-number
+        margin-bottom: -10px
+        font-weight: 900
+        font-size: 45px
+    &-advantage
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        margin: 0 10px -20px 10px
+        padding: 15px
+        color: #fff
+        width: 280px
+        height: 280px
+        text-align: center
+        border-radius: 50%
+        background: rgba(#fff, .2)
+        transition: background .3s
+        position: relative
+        cursor: pointer
+        &::before
+            content: ''
+            position: absolute
+            top: -10px
+            left: -10px
+            width: 300px
+            height: 300px
+            border: 2px dashed $light
+            border-radius: 50%
+            opacity: 0
+            transition: opacity .3s
+        &:hover
+            background: rgba($light, .5)
+            &:before
+                opacity: 1

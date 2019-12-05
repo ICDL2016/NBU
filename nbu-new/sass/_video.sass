@@ -1,0 +1,49 @@
+.video
+    &-wrapper
+        margin: auto
+        width: 100%
+        background: url(../img/bg/video-bg.png) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        background-position-y: 0
+        height: 550px
+        position: relative
+    &-block
+        content: ''
+        position: absolute
+        top: 54%
+        left: 60%
+        cursor: pointer
+        img
+            width: 100px
+            height: 100px
+    &-title
+        padding: 2px 10px
+        font-family: Constantine, serif
+        background: $dark
+        color: #fff
+        font-size: 40px
+    &-button
+        margin: 50px 0
+    &-search
+        margin: auto
+        width: 400px
+        position: relative
+        input
+            width: 400px
+            padding: 8px 20px
+            border: none
+            border-radius: 30px
+            opacity: .75
+        &__icon
+            z-index: 99
+            cursor: pointer
+            position: absolute
+            font-size: 20px
+            right: 20px
+            top: 50%
+            transform: translateY(-50%)
+            color: $dark
+
+#divPlayer1
+    display: none
