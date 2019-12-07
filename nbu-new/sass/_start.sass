@@ -41,6 +41,8 @@
         max-width: 450px
         top: -10px
         right: 100px
+        &__mobile
+            display: none
     &-button
         margin: 0 auto 20px
         padding: 15px 5px 15px 15px
@@ -65,5 +67,54 @@
         span
             display: block
 
+@media screen and (max-width: 991px)
+    .start
+        &-prev
+            text-align: center
+        &-title
+            margin-bottom: 250px
+            justify-content: center
+        &-block
+            margin: auto
+        &-girl
+            display: none
+            &__mobile
+                left: 50%
+                transform: translateX(-50%)
+                top: -250px
+                z-index: -2
+                display: block
+                position: absolute
+                max-width: 350px
 
+@media screen and (max-width: 767px)
+    .start
+        &-prev
+            margin-bottom: 10px
+        &-title
+            span
+                font-size: 25px
+            img
+                width: 70px
 
+@media screen and (max-width: 485px)
+    .start
+        &-title
+            span
+                margin-left: 5px
+                font-size: 20px
+        &-block
+            padding: 10px
+            width: 290px
+            &::after
+                bottom: -185px
+                border: 145px solid transparent
+                border-top: 40px solid #399c3a
+        &-button
+            padding: 15px 5px 15px 20px
+            width: 270px
+        &-border
+            width: 310px
+            height: 330px
+            left: -10px
+            top: -15px

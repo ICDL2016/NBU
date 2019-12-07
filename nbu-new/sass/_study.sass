@@ -9,7 +9,7 @@
         padding-top: 20px
         text-align: center
         width: 150px
-        height: 300px
+        height: 325px
         position: relative
     &-line
         position: absolute
@@ -17,16 +17,116 @@
         top: 0
         right: -30px
         img
-            height: 300px
+            height: 325px
     &-number
         position: absolute
         top: -20px
         left: -25px
+        z-index: 100
     &-icon
         margin-bottom: 10px
     &-descr
         margin-bottom: 10px
         color: rgba(#fff, .8)
-        font-size: 12px
+        font-size: 13px
         font-weight: 300
         line-height: 1.2
+    &-border
+        display: none
+        position: absolute
+        height: 12px
+        width: 100%
+        z-index: 99
+        top: 240px
+        left: 0
+        background: #fff
+
+
+@media screen and (max-width: 991px)
+    .study
+        background: #fff
+        &-blocks
+            background: #399c3a
+            flex-wrap: wrap
+        &-block
+            height: 265px
+            width: 300px
+        &-line
+            &__even
+                display: none
+            img
+                height: 260px
+        &-number
+            top: -25px
+            left: -35px
+            &__last
+                left: 49%
+                transform: translateX(-50%)
+        &-border
+            display: block
+            &__bottom
+                top: 515px
+
+@media screen and (max-width: 767px)
+    .study
+        &-block
+            height: 220px
+            width: 250px
+            &:last-child
+                padding: 40px 0 0
+                width: 100%
+        &-descr
+            padding: 5px 10px
+        &-icon
+            svg
+                width: 80px
+                height: 80px
+        &-line
+            right: -12px
+            img
+                height: 232px
+        &-number
+            top: -15px
+            left: -20px
+            &__last
+                top: -3px
+                left: 50%
+                transform: translateX(-50%)
+        &-border
+            top: 220px
+            height: 10px
+            &__bottom
+                top: 450px
+
+@media screen and (max-width: 575px)
+    .study
+        &-descr
+            margin-bottom: 0
+            font-size: 11.5px
+        &-block
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding-top: 0
+            width: 49%
+            height: 230px
+            &:last-child
+                height: 200px
+                padding: 20px 0 0
+        &-icon
+            margin-bottom: 3px
+            svg
+                width: 60px
+                height: 60px
+        &-number
+            top: -25px
+            left: -15px
+            &__last
+                top: -3px
+                left: 50%
+                transform: translateX(-50%)
+        &-border
+            top: 215px
+            &__bottom
+                top: 470px

@@ -23,6 +23,10 @@
         background: $dark
         color: #fff
         font-size: 40px
+        &__mob
+            display: none
+    &-br
+        height: 0
     &-button
         margin: 50px 0
     &-search
@@ -44,6 +48,113 @@
             top: 50%
             transform: translateY(-50%)
             color: $dark
+    &-contacts
+        display: none
 
 #divPlayer1
     display: none
+
+
+@media screen and (max-width: 991px)
+    .video
+        &-title
+            font-size: 30px
+        &-wrapper
+            height: 450px
+
+@media screen and (max-width: 767px)
+    .video
+        &-title
+            font-size: 25px
+        &-wrapper
+            height: 400px
+        &-block
+            left: 70%
+        &-button
+            margin: 20px 0 30px
+        &-contacts
+            margin-bottom: 30px
+            padding: 10px 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-social
+            display: flex
+            width: 150px
+        &-phone
+            color: #fff
+            a
+                margin-left: 5px
+                position: relative
+                color: #fff
+                &::after
+                    content: ''
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    width: 0
+                    height: 1px
+                    background: #fff
+                    transition: width .3s
+                &:hover
+                    color: #fff
+                    &::after
+                        width: 100%
+
+
+@media screen and (max-width: 575px)
+    .video
+        &-wrapper
+            height: 350px
+            background: url(../img/bg/video-modile__bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            -ms-background-position-y: 0
+            background-position-y: 0
+        &-phone
+            i
+                color: $light
+        &-social
+            .header-social__link
+                opacity: 1
+        &-titles
+            width: 100%
+            text-align: center
+        &-title
+            font-size: 18px
+            &__desc
+                display: none
+            &__mob
+                display: inline-block
+        &-br
+            display: none
+        &-button
+            margin: 5px auto 10px
+        &-block
+            top: 100px
+            left: 50%
+            transform: translateX(-50%)
+            img
+                height: 50px
+                width: 50px
+        &-search
+            width: 290px
+            input
+                width: 290px
+        &-contacts
+            margin-bottom: 110px
+        &-social
+            width: 120px
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,193 @@
+.footer
+    padding: 25px 0 50px 0
+    background: url(../img/bg/footer-bg.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    &-title
+        margin-bottom: 15px
+        font-family: Constantine, serif
+        font-size: 20px
+        text-transform: uppercase
+        color: #272727
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 2px
+            width: 40px
+            background: $dark
+    &-descr
+        font-style: italic
+        margin-bottom: 10px
+        font-size: 12px
+        line-height: 1.2
+    &-logo
+        display: flex
+        align-items: center
+        img
+            width: 80px
+        &__text
+            margin-left: 10px
+        &__title
+            display: block
+            color: $dark
+            line-height: 1.2
+            &-eng
+                letter-spacing: 1.3px
+                font-weight: 700
+                font-weight: bold
+    &-menu
+        li
+            padding: 1px 0
+            a
+                transition: color .3s
+                color: #272727
+                position: relative
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    height: 1px
+                    width: 0
+                    background: $light
+                    transition: width .3s
+            &:hover
+                a
+                    color: $light
+                    &::after
+                        width: 100%
+    &-social
+        margin-bottom: 20px
+        &__mobile
+            display: none
+        &__link
+            opacity: 1
+            color: $dark
+            transition: color .3s
+            &:hover
+                color: $light
+    &-address
+        margin-bottom: 30px
+        i
+            font-size: 25px
+            color: $dark
+            vertical-align: middle
+        span
+            margin-left: 7px
+            color: #6b6b6b
+            font-size: 14px
+            vertical-align: middle
+    &-phone
+        display: flex
+        align-items: center
+        i
+            font-size: 25px
+            color: $dark
+        &__block
+            margin-left: 7px
+            line-height: 1.2
+            color: #6b6b6b
+        &__text
+            font-size: 14px
+        &__number
+            color: #6b6b6b
+            font-size: 25px
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 0
+                height: 1px
+                background: #6b6b6b
+                transition: width .3s
+            &:hover
+                color: #6b6b6b
+                &::after
+                    width: 100%
+    &-bottom
+        padding: 15px 0
+        background: #a8d5b3
+        &__left
+            font-size: 14px
+            color: #fff
+        &__right
+            font-weight: 700
+            font-weight: bold
+            font-size: 14px
+            padding: 10px
+            text-align: center
+            border: 1px solid #ffffff
+            -webkit-border-radius: 10px
+            -moz-border-radius: 10px
+            border-radius: 10px
+            color: #fff
+            transition: background .3s
+            &:hover
+                background: darken(#a8d5b3, 10)
+                color: #fff
+
+@media screen and (max-width: 991px)
+    .footer
+        &-address
+            span
+                font-size: 13px
+        &-menu
+            li
+                padding: 5px 0
+                font-size: 12px
+
+@media screen and (max-width: 767px)
+    .footer
+        padding: 25px 0
+        &-title
+            display: none
+        &-descr
+            display: none
+        &-bottom
+            &__left
+                span
+                    display: block
+                    margin: auto
+        &-logo
+            margin: 0 auto 20px
+            flex-direction: column
+            img
+                margin-bottom: 5px
+        &-menu
+            margin-bottom: 25px
+            li
+                text-align: center
+                font-size: 18px
+                padding: 3px 0
+                &:hover
+                    a
+                        -webkit-border-radius: 10px
+                        -moz-border-radius: 10px
+                        border-radius: 10px
+                        background: $light
+                        color: #fff
+                a
+                    padding: 8px 15px
+                    color: #000
+                    &::after
+                        display: none
+        &-address
+            margin-bottom: 15px
+            text-align: center
+            span
+                font-size: 16px
+        &-phone
+            margin-bottom: 15px
+            justify-content: center
+        &-social
+            &__mobile
+                width: 200px
+                margin: auto
+                display: flex
+                .footer-social__link
+                    font-size: 20px

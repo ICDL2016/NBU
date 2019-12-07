@@ -1,4 +1,6 @@
 .teachers
+    margin: auto
+    width: 90%
     &-title
         &::before
             left: 25px
@@ -9,9 +11,7 @@
         &::after, &::before
             display: none
     &-blocks
-        display: flex
-        flex-wrap: wrap
-        justify-content: center
+        margin: auto
         .owl-nav
             height: 0!important
             display: block!important
@@ -51,3 +51,23 @@
     &-position
         color: #6c6c6c
         font-size: 13px
+
+@media screen and (max-width: 991px)
+    .teachers
+        &-title
+            &::before
+                left: 40px
+                top: 60px
+            &::after
+                right: 40px
+                top: 60px
+
+@media screen and (max-width: 767px)
+    .teachers
+        &-title
+            &::before
+                left: 40px
+                top: 15px
+            &::after
+                right: 40px
+                top: 15px

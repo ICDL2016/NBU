@@ -14,6 +14,8 @@
         display: flex
         justify-content: center
         flex-wrap: wrap
+        margin: auto
+        max-width: 960px
     &-icon
         margin-bottom: 5px
         width: 70px
@@ -43,6 +45,7 @@
         transition: background .3s
         position: relative
         cursor: pointer
+        z-index: 2
         &::before
             content: ''
             position: absolute
@@ -54,7 +57,81 @@
             border-radius: 50%
             opacity: 0
             transition: opacity .3s
+            z-index: 1
         &:hover
             background: rgba($light, .5)
             &:before
                 opacity: 1
+
+@media screen and (max-width: 991px)
+    .about
+        &-title
+            &::before
+                left: 25px
+            &::after
+                right: 25px
+        &-advantage
+            width: 230px
+            height: 230px
+            &::before
+                width: 250px
+                height: 250px
+        &-icon
+            width: 60px
+        &-number
+            font-size: 40px
+        &-text
+            font-size: 18px
+
+@media screen and (max-width: 767px)
+    .about
+        padding: 40px 0
+        &-title
+            &::before
+                left: -25px
+            &::after
+                right: -25px
+        &-advantage
+            margin: 0 10px 0 10px
+            width: 172px
+            height: 172px
+            &::before
+                width: 192px
+                height: 192px
+        &-icon
+            width: 50px
+        &-number
+            font-size: 30px
+        &-text
+            font-size: 15px
+
+@media screen and (max-width: 575px)
+    .about
+        &-title
+            &::before
+                left: 0
+            &::after
+                right: 0
+        &-advantage
+            padding: 7px
+            width: 140px
+            height: 140px
+            &::before
+                top: -5px
+                left: -5px
+                width: 150px
+                height: 150px
+        &-icon
+            width: 35px
+        &-number
+            margin-bottom: -5px
+            font-size: 22px
+        &-text
+            font-size: 13px
+
+@media screen and (max-width: 479px)
+    .about
+        &-advantage
+            margin: 0 10px 10px 10px
+            &:last-child
+                margin: -20px 10px 0 10px

@@ -29,3 +29,68 @@
             color: #417b13
         img
             align-self: center
+
+@media screen and (max-width: 991px)
+    .diploma
+        &-subtitle
+            line-height: 1.2
+            margin-bottom: 20px
+        &-title
+            &::before
+                left: -25px
+                width: 50px
+            &::after
+                right: -25px
+                width: 50px
+        &-img
+            margin: 0 auto 20px
+            width: 600px
+            flex-wrap: wrap
+            justify-content: center
+            a
+                margin: 0 15px
+
+@media screen and (max-width: 767px)
+    .diploma
+        &-title
+            margin-bottom: 10px
+            max-width: 400px
+            span
+                display: block
+            &::before
+                left: 35px
+                top: 15px
+            &::after
+                right: 35px
+                top: 15px
+        &-img
+            width: 500px
+            a
+                margin-bottom: 10px
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    max-width: 200px
+        &-subtitle
+            font-size: 16px
+        &-license
+            text-align: center
+            margin: auto
+            &__descr
+                font-size: 16px
+
+@media screen and (max-width: 575px)
+    .diploma
+        &-img
+            width: 100%
+
+@media screen and (max-width: 365px)
+    .diploma
+        &-title
+            &::before
+                left: 15px
+            &::after
+                right: 15px
+            span
+                font-size: 21px

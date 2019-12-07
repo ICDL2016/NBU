@@ -33,3 +33,57 @@
         line-height: 1.2
         text-align: center
         color: #545454
+
+@media screen and (max-width: 991px)
+    .profit
+        &-title
+            &::before
+                left: -15px
+                width: 50px
+            &::after
+                right: -15px
+                width: 50px
+
+@media screen and (max-width: 767px)
+    .profit
+        &-title
+            max-width: 400px
+            span
+                display: block
+            &::before
+                top: 15px
+                left: 45px
+            &::after
+                top: 15px
+                right: 45px
+
+@media screen and (max-width: 479px)
+    .profit
+        &-block
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding: 10px
+            width: 120px
+            height: 170px
+        &-descr
+            font-size: 13px
+
+@media screen and (max-width: 389px)
+    .profit
+        &-title
+            &::before
+                left: 0
+            &::after
+                right: 0
+        &-block
+            padding: 5px
+            width: 95px
+            height: 120px
+        &-icon
+            margin-bottom: 10px
+            svg
+                width: 40px
+                height: 40px
+        &-descr
+            font-size: 10px

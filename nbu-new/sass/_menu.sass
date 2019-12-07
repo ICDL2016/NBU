@@ -1,0 +1,62 @@
+.menu
+    padding: 60px 0
+    background: url(../img/bg/menu-bg.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    &-blocks
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+    &-block
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        padding: 15px
+        border: 1px solid rgba(#ccc, .5)
+        text-align: center
+        width: 300px
+        color: rgba(#fff, .8)
+        line-height: 1.2
+        transition: background .3s
+        cursor: pointer
+        span
+            display: block
+        svg
+            transition: all .3s
+            margin-bottom: 15px
+        &:hover
+            background: rgba($orange, .8)
+            color: #fff
+            .fil1
+                fill: white
+    &-title
+        font-size: 20px
+
+@media screen and (max-width: 767px)
+    .menu
+        &-icon
+            display: flex
+            justify-content: center
+            width: 75px
+        &-block
+            padding: 15px 15px 15px 45px
+            width: 100%
+            flex-direction: unset
+            justify-content: flex-start
+            svg
+                margin-bottom: 0
+        &-title
+            margin-left: 20px
+            text-align: left
+
+@media screen and (max-width: 430px)
+    .menu
+        &-block
+            padding: 15px 4px
+            span
+                display: inline-block
+        &-title
+            width: 190px
+            margin-left: 10px
+            font-size: 16px
