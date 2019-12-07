@@ -1525,7 +1525,11 @@ input:focus, textarea:focus {
     font-size: 13px; }
   .footer-menu li {
     padding: 5px 0;
-    font-size: 12px; } }
+    font-size: 12px; }
+  .footer-logo__title {
+    font-size: 13px; }
+    .footer-logo__title-eng {
+      letter-spacing: 1px; } }
 @media screen and (max-width: 767px) {
   .footer {
     padding: 25px 0; }
