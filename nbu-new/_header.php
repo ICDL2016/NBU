@@ -6,13 +6,13 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NBU CITY</title>
-    <link rel="shortcut icon" href="img/footer/footer-logo.png" type="image/png">
+    <link rel="shortcut icon" href="img/misc/logo.png" type="image/png">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="sass/style.css?v=3">
+    <link rel="stylesheet" href="sass/style.css?v=4">
 </head>
 <body>
 
@@ -39,6 +39,8 @@
             <div class="header-logo">
                 <a href="index.php">
                     <img src="img/misc/logo.png" alt="logo">
+                    <span class="header-logo__title">НОВЫЙ БИЗНЕС УНИВЕРСИТЕТ</span>
+                    <span class="header-logo__title header-logo__title-eng">NEW BUSINESS UNIVERSITY</span>
                 </a>
             </div>
             <div class="header-social">
@@ -63,7 +65,8 @@
             </div>
             <div class="header-login">
                 <img src="img/misc/login.png" alt="login">
-                <a href="login.php">Кабинет студента</a>
+                <a href="login.php" class="header-login__desc">Кабинет студента</a>
+                <a href="login.php" class="header-login__mob">Войти</a>
             </div>
         </div>
     </div>

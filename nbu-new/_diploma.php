@@ -1,6 +1,6 @@
 <div class="diploma">
   <div class="container">
-    <div class="title diploma-title">Получите ОФИЦИАЛЬНЫЙ ДИПЛОМ</div>
+    <div class="title diploma-title">Получите <span>ОФИЦИАЛЬНЫЙ ДИПЛОМ</span></div>
     <div class="diploma-subtitle">с международным приложением в кратчайшие сроки</div>
 
     <div class="diploma-img">

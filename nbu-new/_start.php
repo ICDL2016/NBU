@@ -12,10 +12,10 @@
         </div>
 
         <div class="start-block">
-
+          <img src="img/start/girl-mob.png" alt="girl" class="start-girl__mobile">
           <img src="img/start/border.png" alt="border" class="start-border">
 
-          <div class="button start-button">Начать обучение бесплатно</div>
+          <a class="button start-button" href="#">Начать обучение бесплатно</a>
           <div class="start-today">СЕГОДНЯ 08.09.2019</div>
           <div class="start-text">Нажмите на кнопку
             <span>«Начать обучение бесплатно»</span>

@@ -2,7 +2,9 @@
   <div class="title study-title">Как проходит обучение</div>
 </div>
 <div class="study">
-  <div class="container">
+  <div class="container position-relative">
+    <div class="study-border"></div>
+    <div class="study-border study-border__bottom"></div>
     <div class="study-blocks">
       <div class="study-block study-block1">
         <div class="study-number">
@@ -22,7 +24,7 @@
         <div class="study-number">
           <img src="img/study/numbers/2.png" alt="2">
         </div>
-        <div class="study-line">
+        <div class="study-line study-line__even">
           <img src="img/study/line-bottom.png" alt="line">
         </div>
         <div class="study-descr">Оплатите доступ к выбранному курсу для продолжения дистанционного обучения. При
@@ -51,7 +53,7 @@
         <div class="study-number">
           <img src="img/study/numbers/4.png" alt="4">
         </div>
-        <div class="study-line">
+        <div class="study-line study-line__even">
           <img src="img/study/line-bottom.png" alt="line">
         </div>
         <div class="study-descr">После сдачи тестов закажите доставку или получение в офисе NBU Вашего диплома. Все
@@ -62,7 +64,7 @@
         </div>
       </div>
       <div class="study-block">
-        <div class="study-number">
+        <div class="study-number study-number__last">
           <img src="img/study/numbers/5.png" alt="5">
         </div>
         <div class="study-icon">

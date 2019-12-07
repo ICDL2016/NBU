@@ -1,7 +1,7 @@
 <div class="profit">
   <div class="container">
     <div class="title profit-title">
-      Почему Вам выгодно учится в NBU
+      Почему Вам <span>выгодно учится в NBU</span>
     </div>
 
     <div class="profit-blocks">
