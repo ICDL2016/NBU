@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".choose-sphere__slider, .teachers-blocks, .clients-slider").owlCarousel({
+    $(".clients-slider, .teachers-blocks, .choose-sphere__slider").owlCarousel({
         nav: true,
         autoplay: true,
         loop: true,
@@ -7,17 +7,35 @@ $(document).ready(function(){
         navText: ["<img class='arrow arrow-left' src='./img/misc/arrow-left.png' alt='arrow-left'>", "<img class='arrow arrow-right' src='./img/misc/arrow-right.png' alt='arrow-right'>"],
         items: 5,
         responsive : {
-            // breakpoint from 0 up
             0 : {
                 items: 1,
             },
-            // breakpoint from 600 up
-            630 : {
+            440 : {
                 items: 2,
             },
-            // breakpoint from 992 up
-            992 : {
+            610 : {
+                items: 3,
+            },
+            780 : {
+                items: 4,
+            },
+            950 : {
                 items: 5,
+            },
+            1120 : {
+                items: 6,
+            },
+            1290 : {
+                items: 7,
+            },
+            1460 : {
+                items: 8,
+            },
+            1630 : {
+                items: 9,
+            },
+            1800 : {
+                items: 10,
             },
         }
     });
@@ -34,15 +52,21 @@ var player1;
 
 function onYouTubeIframeAPIReady() {
 
-    if($(window).width() < 451) {
+    if($(window).width() < 576) {
         player1 = new YT.Player('divPlayer1', {
-            height: '200',
+            height: '350',
             width: '100%',
             videoId: 'd8Oc90QevaI',
         });
     } else if ($(window).width() < 768) {
         player1 = new YT.Player('divPlayer1', {
-            height: '300',
+            height: '400',
+            width: '100%',
+            videoId: 'd8Oc90QevaI',
+        });
+    } else if ($(window).width() < 992) {
+        player1 = new YT.Player('divPlayer1', {
+            height: '450',
             width: '100%',
             videoId: 'd8Oc90QevaI',
         });
@@ -63,6 +87,7 @@ function play1(event) {
     player1.playVideo();
 }
 
+//бургер-меню
 let burger = document.body.querySelector('.header-burger');
 burger.addEventListener('click', function () {
    burger.classList.toggle('burger-active');
