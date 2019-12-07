@@ -717,6 +717,10 @@ input:focus, textarea:focus {
       height: 40px; }
   .profit-descr {
     font-size: 10px; } }
+.knowledge-title::before {
+  left: 0; }
+.knowledge-title::after {
+  right: 0; }
 .knowledge-subtitle {
   margin-bottom: 20px; }
   .knowledge-subtitle::after, .knowledge-subtitle::before {
