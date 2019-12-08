@@ -1,0 +1,34 @@
+.courses
+    &-video
+        &__wrapper
+            background: url(../img/courses/courses-bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+    &-subtitle
+        margin-bottom: 15px
+        text-align: center
+        font-size: 14px
+    &-title
+        margin-bottom: 0
+
+@media screen and (max-width: 991px)
+    .courses
+        &-start
+            &__title
+                align-items: center
+                margin-bottom: 300px
+        &-man
+            &__mob
+                top: -300px
+
+@media screen and (max-width: 575px)
+    .courses
+        &-video
+            &__wrapper
+                background: url(../img/courses/courses-bg__mob.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+                background-position-y: 15%
+        &-man
+            &__mob
+                max-width: 300px

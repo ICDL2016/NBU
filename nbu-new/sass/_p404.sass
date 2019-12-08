@@ -1,0 +1,28 @@
+.p404
+    padding: 40px 0
+    &-img
+        margin-bottom: 25px
+        &__mob
+            display: none
+        img
+            width: 100%
+    &-text
+        margin-bottom: 20px
+        font-size: 18px
+        text-align: center
+        line-height: 1.2
+    &-button
+        margin: auto
+
+@media screen and (max-width: 575px)
+    .p404
+        padding: 20px 0 40px
+        &-img
+            padding: 0 20px
+            margin-bottom: 25px
+            &__mob
+                display: block
+            &__desc
+                display: none
+        &-button
+            padding: 10px 10px 10px 15px

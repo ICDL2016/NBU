@@ -1,0 +1,63 @@
+.reviews
+    padding: 50px 0
+    &-title
+        margin-bottom: 30px
+    &-blocks
+        display: flex
+        flex-wrap: wrap
+    &-block
+        padding: 15px
+        width: 50%
+        display: flex
+        align-items: center
+        border-bottom: 1px solid #cccccc
+    &-text
+        margin-left: 15px
+        line-height: 1.2
+        span
+            color: $light
+    &-author
+        margin-bottom: 15px
+        font-size: 17px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: -5px
+            width: 60%
+            height: 1px
+            background: $light
+    &-descr
+        font-size: 15px
+
+@media screen and (max-width: 991px)
+    .reviews
+        &-block
+            margin-bottom: 25px
+            padding: 0
+            width: 100%
+            border: none
+
+@media screen and (max-width: 767px)
+    .reviews
+        &-title
+            &::before
+                top: 15px
+                left: 20px
+            &:after
+                top: 15px
+                right: 20px
+            span
+                display: block
+
+@media screen and (max-width: 575px)
+    .reviews
+        &-title
+            &::before, &:after
+                width: 50px
+        &-block
+            align-items: flex-start
+        &-img
+            img
+                width: 100px

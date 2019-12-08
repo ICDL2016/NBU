@@ -1,8 +1,11 @@
 .more
     padding: 50px 0
-    background: url(../img/bg/more-bg.png) center no-repeat
+    background: url(../img/more/more-bg.png) center no-repeat
     -webkit-background-size: cover
     background-size: cover
+    &-img
+        img
+            width: 108px
     &-title
         margin-bottom: 20px
         &::before, &::after
@@ -79,6 +82,10 @@
             flex-wrap: wrap
         &-phone
             order: 2
+            &__title
+                margin-bottom: -10px
+            i
+                top: 20px
         &-img
             margin: 0 15px 15px
             order: 1

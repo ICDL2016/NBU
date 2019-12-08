@@ -1,0 +1,132 @@
+.professions
+    &-video
+        &__wrapper
+            background: url(../img/prof/prof-bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            height: 400px
+
+
+    &-title
+        &::before
+            width: 50px
+            top: 75%
+            left: 50px
+        &::after
+            width: 50px
+            top: 75%
+            right: 50px
+
+.directions
+    margin: 10px 0 20px
+    &-blocks
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        position: relative
+    &-title
+        text-transform: none
+        margin-bottom: 10px
+    &-block
+        margin: 6px
+        border: 1px solid $light
+        border-radius: 30px
+        line-height: 1
+        width: 290px
+        height: 60px
+        text-align: center
+        color: $light
+        padding: 5px 15px
+        font-size: 18px
+        font-weight: 700
+        background: #fff
+        transition: background .3s
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        position: relative
+        &::after
+            content: ''
+            z-index: 1
+            bottom: -20px
+            left: 50%
+            transform: translateX(-50%)
+            position: absolute
+            border: 10px solid transparent
+        &:hover
+            border: 1px solid $orange
+            background: linear-gradient(to right, $light 5%, $orange 5%)
+            color: #fff
+
+.directions-after
+    &::after
+        border-top: 10px solid $orange
+
+.programs
+    background: #eee
+    &-wrap
+        width: 100%
+        display: none
+        position: absolute
+    &-block
+        text-align: center
+        padding: 15px 0
+        display: table
+        margin: 2.5px
+        width: 100%
+        cursor: pointer
+        position: relative
+
+        &__list
+            width: 100%
+            li
+                a
+                    display: block
+                    padding: 5px 15px
+                    width: 100%
+                    color: $text
+                    font-size: 20px
+                    transition: all .3s
+                    font-weight: 700
+                &:hover > a
+                    background: $orange
+                    color: #fff
+
+@media screen and (max-width: 991px)
+    .professions
+        &-title
+            &::after
+                width: 25px
+                top: 20px
+                right: 40px
+            &::before
+                width: 25px
+                top: 20px
+                left: 40px
+
+@media screen and (max-width: 767px)
+    .professions
+        &-title
+            &::after
+                top: 15px
+                right: 0
+            &::before
+                top: 15px
+                left: 0
+
+@media screen and (max-width: 575px)
+    .professions
+        &-video
+            &__wrapper
+                background: url(../img/prof/prof-bg_mob.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+                background-position-y: 0
+                height: 300px
+            &__contacts
+                margin-bottom: 160px
+            &__block
+                top: 150px
+                left: 50%

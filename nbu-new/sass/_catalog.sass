@@ -1,0 +1,126 @@
+.catalog
+    &-video
+        &__wrapper
+            background: url(../img/catalog/catalog-bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            height: 400px
+        &__block
+            left: 65%
+    &-title
+        &::before
+            left: 0
+        &::after
+            right: 0
+    &-subtitle
+        margin-bottom: 20px
+        &::before, &::after
+            display: none
+
+    &-blocks
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+    &-block
+        margin: 2px
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding: 30px 10px 10px
+        text-align: center
+        border: 1px solid $light
+        width: 165px
+        height: 200px
+        color: $text
+        line-height: 1.2
+        font-size: 19px
+        transition: background .3s
+        cursor: pointer
+        svg
+            margin-bottom: 15px
+            height: 70px
+            width: 70px
+        &:hover
+            color: #fff
+            background: linear-gradient(to left, $light 0, $dark 100%)
+            .fil1
+                fill: white
+
+    &-man
+        max-width: 550px
+        top: auto
+        bottom: -55px
+        right: 20px
+    &-start
+        &__title
+            align-items: center
+
+@media screen and (max-width: 991px)
+    .catalog
+        &-title
+            &::before
+                width: 50px
+                left: -35px
+            &::after
+                width: 50px
+                right: -35px
+
+
+@media screen and (max-width: 767px)
+    .catalog
+        &-title
+            &::before
+                top: 15px
+                left: -25px
+            &::after
+                top: 15px
+                right: -25px
+
+@media screen and (max-width: 609px)
+    .catalog
+        &-blocks
+            justify-content: center
+            width: 100%
+
+@media screen and (max-width: 575px)
+    .catalog
+        &-title
+            &::before
+                width: 25px
+                left: 0
+            &::after
+                width: 25px
+                right: 0
+        &-video
+            &__wrapper
+                background: url(../img/catalog/catalog-mobile__bg.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+                background-position-y: 30%
+                height: 300px
+            &__contacts
+                margin-bottom: 160px
+            &__block
+                top: 150px
+                left: 50%
+
+@media screen and (max-width: 506px)
+    .catalog
+        &-start
+            &__title
+                margin-bottom: 200px
+        &-blocks
+            width: 300px
+        &-block
+            display: block
+            padding: 10px
+            width: 95px
+            height: 120px
+            font-size: 11px
+            svg
+                width: 45px
+                height: 45px
+        &-man
+            &__mobile
+                top: -200px
+                width: 300px
