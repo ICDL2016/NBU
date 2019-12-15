@@ -1,0 +1,256 @@
+.contacts
+    &-form
+        position: relative
+        padding: 10px 20px 20px
+        width: 400px
+        background: $dark
+        &__wrapper
+            margin-bottom: 20px
+        &__title
+            color: #fff
+            margin: 15px 0
+            font-size: 22px
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            span
+                margin-left: 15px
+                font-family: Constantine, serif
+                font-size: 28px
+                color: #000
+        &__girl
+            position: absolute
+            right: -480px
+            top: -70px
+            width: 500px
+            z-index: -1
+
+    &-title
+        margin-bottom: 15px
+        text-align: center
+        color: #fff
+        position: relative
+        font-size: 20px
+        &::before, &::after
+            content: ''
+            position: absolute
+            top: 50%
+            width: 30px
+            height: 1px
+            background: #fff
+        &::before
+            left: 80px
+        &::after
+            right: 80px
+    &-button
+        margin: 5px auto 15px
+
+
+    &-top
+        span
+            color: $light
+    &-img
+        position: absolute
+        top: -20px
+        right: 85px
+        img
+            width: 420px
+
+    &-call, &-consult
+        margin: 30px auto 10px
+        font-size: 18px
+        text-align: center
+
+    &-block
+        padding: 20px 0 0 0
+        text-align: center
+
+    &-managers
+        text-align: center
+        &__title
+            margin: 20px auto 40px
+            line-height: 1.2
+            font-size: 20px
+
+    &-phone
+        display: flex
+        justify-content: center
+        align-items: center
+        &__icon
+            img
+                width: 80px
+        &__number
+            margin-left: 10px
+            line-height: 1.2
+            text-align: left
+            a
+                font-weight: 700
+                font-weight: bold
+                color: #000
+                &::after
+                    content: ''
+                    position: absolute
+                    bottom: -2px
+                    left: 0
+                    width: 0
+                    height: 1px
+                    color: #000
+                    background: $gray
+                    transition: width .3s
+            &:hover
+                color: $gray
+                &::after
+                    width: 100%
+            &-title
+                font-size: 20px
+            &-number
+                font-size: 40px
+
+    &-manager
+        display: inline-block
+        width: 200px
+        &__img
+            img
+                width: 100%
+        &__name
+            -webkit-border-radius: 15px
+            -moz-border-radius: 15px
+            border-radius: 15px
+            padding: 5px 0
+            background: $light
+            color: #ffffff
+
+    &-address
+        line-height: 1.2
+        max-width: 600px
+        margin: auto
+        font-size: 14px
+        &__title
+            margin: 10px 0 0
+            color: $dark
+
+    &-mobile
+        &__img
+            display: none
+
+    &-gallery
+        text-align: center
+        margin: 20px auto
+        img
+            margin-bottom: 4px
+            width: 300px
+            height: 200px
+            display: inline-block
+
+@media only screen and (max-width: 991px)
+    .contacts
+        &-img
+            top: 20px
+            right: 0
+            img
+                width: 350px
+        &-form
+            &__wrapper
+                padding-bottom: 0
+            &__girl
+                width: 400px
+                right: -360px
+                top: 60px
+
+@media only screen and (max-width: 767px)
+    .contacts
+        &-mobile
+            &__img
+                height: 300px
+                display: block
+                position: relative
+                img
+                    position: absolute
+                    width: 350px
+                    bottom: -70px
+                    left: 50%
+                    transform: translateX(-50%)
+        &-phone
+            &__number
+                &-title
+                    font-size: 20px
+                &-number
+                    font-size: 30px
+            &__icon
+                img
+                    width: 65px
+        &-top
+            &__text
+                max-width: 400px
+        &-title
+            &__wrapper
+                img
+                    display: inline-block
+
+        &-img
+            display: none
+        &-call
+            margin: 10px auto
+        &-managers
+            &__title
+                font-size: 17px
+                margin: 20px auto
+        &-manager
+            width: 32%
+            margin: 10px auto
+        &-form
+            margin: auto
+            &__title
+                justify-content: center
+                margin-bottom: 380px
+            &__girl
+                right: auto
+                left: 50%
+                transform: translateX(-50%)
+                top: -400px
+
+@media only screen and (max-width: 575px)
+    .contacts
+        &-mobile
+            &__img
+                height: 250px
+                img
+                    width: 290px
+        &-top
+            text-align: left
+            &__text
+                max-width: 300px
+                margin-left: 15px
+
+@media only screen and (max-width: 500px)
+    .contacts
+        &-maintitle
+            margin-bottom: 0
+
+@media (max-width: 450px)
+    .contacts
+        &-phone
+            &__number
+                &-title
+                    font-size: 18px
+                &-number
+                    font-size: 25px
+        &-title
+            &::before, &::after
+                display: none
+        &-form
+            padding: 10px
+            width: 100%
+            &__wrapper
+                .container
+                    padding: 0!important
+            &__title
+                margin-bottom: 280px
+            &__girl
+                width: 300px
+                top: -300px
+
+@media (max-width: 425px)
+    .contacts
+        &-padding
+            padding: 0!important

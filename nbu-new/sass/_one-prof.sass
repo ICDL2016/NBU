@@ -1,0 +1,208 @@
+.prof
+    &-video
+        &__wrapper
+            background: url(../img/one-prof/one-prof-bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            height: 400px
+        &__block
+            left: 60%
+            top: 50%
+            transform: translate(-50%, -50%)
+    &-offer
+        padding: 10px
+        max-width: 400px
+        background: $dark
+        box-shadow: 3px 3px 13px -2px #000
+        color: #fff
+        &__mob
+            display: none
+        &__wrapper
+            padding-top: 70px
+        &__title
+            width: max-content
+            margin: 0 auto 15px
+            text-align: center
+            position: relative
+            &::before, &::after
+                content: ''
+                position: absolute
+                height: 1px
+                background: #fff
+                width: 25px
+                top: 50%
+            &::before
+                left: -50px
+            &::after
+                right: -50px
+        &__name
+            padding-left: 65px
+            font-family: Constantine, serif
+            font-size: 26px
+            text-align: left
+            line-height: 1.2
+            text-transform: uppercase
+            position: relative
+            &::before
+                content: ''
+                left: 45px
+                top: 0
+                height: 100%
+                width: 4px
+                background: #fff
+                position: absolute
+    &-query
+        text-align: center
+        color: rgba(#fff, .75)
+    &-date
+        text-align: center
+        text-transform: uppercase
+        color: rgba(#fff, .75)
+        font-size: 18px
+    &-button
+        margin: 15px auto
+    &-woman
+        max-width: 550px
+        right: 0
+        top: 35px
+    &-prev
+        margin: 0 0 15px 15px
+        font-size: 20px
+        position: relative
+        width: max-content
+        &::before, &::after
+            content: ''
+            position: absolute
+            width: 20px
+            height: 1px
+            background: $light
+            top: 50%
+        &::before
+            left: -30px
+        &::after
+            right: -30px
+    &-title
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: -15px
+            height: 100%
+            width: 6px
+            background: $light
+    &-get
+        margin-bottom: 30px
+        font-size: 25px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            width: 50px
+            height: 1px
+            background: #fff
+            left: 50%
+            transform: translateX(-50%)
+            bottom: -10px
+    &-block
+        padding: 30px 15px 45px 15px
+    &-start
+        &__query, &__date
+            font-size: 20px
+
+.test
+    &-button
+        margin: 15px auto
+        span
+            font-weight: 700
+            font-weight: bold
+            text-transform: uppercase
+    &-subtitle
+        margin-bottom: 0
+    &-man
+        top: 50px
+        right: 50px
+    &-start
+        &__button
+            margin: 25px auto 0
+
+
+@media screen and (max-width: 991px)
+    .prof
+        &-video
+            &__block
+                left: 50%
+            &__wrapper
+                background-position-x: 60%
+        &-offer
+            margin: auto
+            &__wrapper
+                padding-top: 398px
+            &__mob
+                margin-top: -2px
+                display: block
+            &__desc
+                display: none
+        &-title
+            margin-bottom: 270px
+        &-prev
+            margin: 0 auto 15px
+        &-title
+            &::before
+                left: 175px
+
+    .test
+        &-man
+            top: -250px
+
+@media screen and (max-width: 767px)
+    .prof
+        &-offer
+            &__wrapper
+                padding-top: 325px
+        &-title
+            margin-left: auto
+            margin-right: auto
+            width: max-content
+            &::before
+                left: 0
+
+@media screen and (max-width: 575px)
+    .prof
+        &-woman
+            &__mob
+                max-width: 300px
+        &-offer
+            &__wrapper
+                padding-left: 0
+                padding-right: 0
+                padding-top: 96px
+            &__name
+                padding-left: 0
+                width: 250px
+                margin: 10px auto
+                text-align: center
+                &::before
+                    display: none
+        &-video
+            &__wrapper
+                background: url(../img/one-prof/prof-bg-mob.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+                height: 300px
+            &__block
+                svg
+                    width: 80px
+                    height: 80px
+        &-title
+            &::before
+                left: -15px
+        &-block
+            padding: 30px 15px 35px 15px
+
+    .test
+        &-man
+            max-width: 300px
+        &-start
+            &__button
+                width: 260px

@@ -14,9 +14,15 @@
         top: 54%
         left: 60%
         cursor: pointer
-        img
+        svg
             width: 100px
             height: 100px
+            .fil1
+                fill: $orange
+                transition: fill .3s
+            &:hover
+                .fil1
+                    fill: $light
     &-title
         padding: 2px 10px
         font-family: Constantine, serif
@@ -74,7 +80,7 @@
             margin: 20px 0 30px
         &-contacts
             margin-bottom: 30px
-            padding: 10px 0
+            padding: 15px 0
             display: flex
             justify-content: space-between
             align-items: center
@@ -135,9 +141,12 @@
             top: 100px
             left: 50%
             transform: translateX(-50%)
-            img
+            svg
                 height: 50px
                 width: 50px
+                &:hover
+                    .fil1
+                        fill: $dark
         &-search
             width: 290px
             input
