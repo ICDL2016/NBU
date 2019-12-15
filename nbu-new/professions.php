@@ -32,7 +32,7 @@
     </div>
 
     <div class="video-block professions-video__block" onclick="play1(event)">
-      <img src="img/misc/play.png" alt="play">
+      <?php require_once 'img/misc/play.svg'; ?>
     </div>
 
     <div class="container pt-md-5">

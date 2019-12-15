@@ -30,7 +30,7 @@
     </div>
 
     <div class="video-block" onclick="play1(event)">
-      <img src="img/misc/play.png" alt="play">
+      <?php require_once 'img/misc/play.svg'; ?>
     </div>
 
     <div class="container pt-md-5">
@@ -43,7 +43,7 @@
         <span class="video-title video-title__mob">ОФИЦИАЛЬНОГО ДИПЛОМА</span>
       </div>
 
-      <a class="button video-button" href="">
+      <a class="button video-button show-form__btn" href="">
         Начать обучение бесплатно
         <span>сегодня 25.04.2019</span>
       </a>

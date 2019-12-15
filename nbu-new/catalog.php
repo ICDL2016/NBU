@@ -32,7 +32,7 @@
     </div>
 
     <div class="video-block catalog-video__block" onclick="play1(event)">
-      <img src="img/misc/play.png" alt="play">
+      <?php require_once 'img/misc/play.svg'; ?>
     </div>
 
     <div class="container pt-md-5">
@@ -58,8 +58,36 @@
 
 <?php require '_catalog_programms.php'; ?>
 
-<div class="mt-5"></div>
-<?php require_once '_choose-course.php'; ?>
+<div class="choose-course">
+  <div class="container">
+    <div class="title choose-course__title">Выберите курс обучения</div>
+  </div>
+  <div class="choose-course__blocks">
+    <?php $courses = ['Маркетинговые исследования', 'Управление и организация услуг в сфере маркетинга и рекламы']; ?>
+    <?php for ($i = 0; $i < 6; $i++) : ?>
+      <div class="choose-course__block choose-course__block<?= rand(1, 2); ?> margin-helper"
+           data-program="<?= $i + 1; ?>">
+        <div class="choose-course__descr">
+          <?= $courses[rand(0, 1)] ?>
+        </div>
+      </div>
+      <div class="programs-wrap" data-program="<?= $i + 1; ?>">
+        <div class="programs">
+          <div class="programs-block">
+            <ul class="programs-block__list">
+              <li><a href="">Менеджер по финансам</a></li>
+              <li><a href="">Администратор гостиницы</a></li>
+              <li><a href="">Директор по финансам</a></li>
+              <li><a href="">Менеджер по логистике</a></li>
+              <li><a href="">Директор гостиницы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <?php endfor; ?>
+  </div>
+</div>
+
 <div class="mt-5"></div>
 <?php require '_catalog_programms.php'; ?>
 <div class="mt-5"></div>
@@ -113,6 +141,7 @@
 <?php require_once '_menu.php'; ?>
 
 <?php require_once '_footer.php'; ?>
+<?php require_once '_popup.php'; ?>
 <?php require_once '_scripts.php'; ?>
 <script>
     //video
@@ -126,7 +155,7 @@
 
     function onYouTubeIframeAPIReady() {
 
-        if($(window).width() < 576) {
+        if ($(window).width() < 576) {
             player1 = new YT.Player('divPlayer1', {
                 height: '300',
                 width: '100%',
@@ -147,6 +176,27 @@
         $('#divPlayer1').show();
         $('iframe').css('display', 'block');
         player1.playVideo();
+    }
+
+    // блоки
+    let directionsBlock = document.querySelectorAll('.choose-course__block');
+
+    for (let i = 0; i < directionsBlock.length; i++) {
+        directionsBlock[i].addEventListener('click', function () {
+
+            $('.programs-wrap[data-program!=' + $(this).attr('data-program') + ']').hide();
+            $('.choose-course__block[data-program!=' + $(this).attr('data-program') + ']').removeClass('course-orange').addClass('margin-helper');
+
+            let directionsTop = document.querySelector('.choose-course__blocks').getBoundingClientRect().top;
+            let blockTop = this.getBoundingClientRect().top;
+            let marginFromTop = blockTop - directionsTop;
+            this.classList.toggle('course-orange');
+            this.classList.toggle('margin-helper');
+
+            $('.programs-wrap[data-program=' + $(this).attr('data-program') + ']').css('top', +marginFromTop + 183 + 'px').toggle();
+            let blockHeight = $('.programs-wrap[data-program=' + $(this).attr('data-program') + ']').height();
+            this.style.marginBottom = blockHeight + 'px';
+        });
     }
 </script>
 <?php require_once '_end.php'; ?>
