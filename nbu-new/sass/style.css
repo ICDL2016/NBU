@@ -3187,7 +3187,8 @@ input:focus, textarea:focus {
     font-weight: 700;
     overflow: hidden;
     position: relative;
-    transition: background 0.3s; }
+    transition: background 0.3s;
+    cursor: pointer; }
     .testq-button::before {
       content: "";
       position: absolute;
