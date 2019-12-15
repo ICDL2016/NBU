@@ -49,7 +49,8 @@ input:focus, textarea:focus {
   font-weight: 700;
   overflow: hidden;
   position: relative;
-  transition: background 0.3s; }
+  transition: background 0.3s;
+  cursor: pointer; }
   .button span {
     display: block;
     text-align: center;
@@ -603,9 +604,13 @@ input:focus, textarea:focus {
     .video-search input {
       width: 290px; }
   .video-contacts {
-    margin-bottom: 110px; }
+    margin-bottom: 105px; }
   .video-social {
     width: 120px; } }
+@media screen and (max-width: 450px) {
+  .video-offer {
+    max-width: inherit !important;
+    width: 100% !important; } }
 .arrow {
   position: absolute;
   top: 50%;
@@ -1317,7 +1322,7 @@ input:focus, textarea:focus {
   .start-block::after {
     content: "";
     position: absolute;
-    bottom: -240px;
+    bottom: -239px;
     left: 0;
     border: 200px solid transparent;
     border-top: 40px solid #399c3a; }
@@ -1337,7 +1342,12 @@ input:focus, textarea:focus {
     display: none; }
 .start-button {
   margin: 0 auto 20px;
-  padding: 15px 5px 15px 15px; }
+  padding: 15px 5px 15px 15px;
+  box-shadow: none;
+  border: 1px solid transparent; }
+  .start-button:hover {
+    border: 1px solid #ff9301;
+    background: #69c925; }
 .start-today {
   margin-bottom: 20px;
   font-size: 22px;
@@ -1423,6 +1433,9 @@ input:focus, textarea:focus {
     transform: translateX(-50%);
     height: 150px; }
   .more-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
     font-size: 16px;
     margin: 0 auto 30px; }
   .more-call {
@@ -1758,7 +1771,12 @@ input:focus, textarea:focus {
     text-align: center;
     line-height: 1.2; }
   .p404-button {
-    margin: auto; }
+    margin: auto;
+    box-shadow: none;
+    border: 1px solid transparent; }
+    .p404-button:hover {
+      border: 1px solid #ff9301;
+      background: #69c925; }
 
 @media screen and (max-width: 575px) {
   .p404 {
@@ -1826,6 +1844,12 @@ input:focus, textarea:focus {
     .login-remind:hover {
       color: #49984c;
       text-decoration: underline; }
+  .login-button {
+    box-shadow: none;
+    border: 1px solid transparent; }
+    .login-button:hover {
+      border: 1px solid #ff9301;
+      background: #69c925; }
 
 .login-form__form .form-checkbox + label:before {
   border: 1px solid #69c925; }
@@ -2737,7 +2761,6 @@ input:focus, textarea:focus {
     border-radius: 30px;
     border: 2px solid #69c925;
     background: transparent;
-    box-shadow: 3px 3px 13px -2px #000;
     overflow: hidden;
     position: relative;
     transition: background 0.3s; }
@@ -2752,8 +2775,8 @@ input:focus, textarea:focus {
       transition: background 0.3s; }
     .onecourse-more__button:hover {
       color: #fff;
-      background: #49984c;
-      border: 2px solid transparent; }
+      background: #69c925;
+      border: 2px solid #ff9301; }
       .onecourse-more__button:hover::before {
         background: #ff9301; }
 .onecourse-choose__title span {
@@ -2770,6 +2793,7 @@ input:focus, textarea:focus {
 .onecourse-title {
   padding-top: 50px; }
 .onecourse-offer {
+  max-width: 500px;
   position: absolute;
   bottom: -15px;
   padding: 30px 5px; }
@@ -2780,7 +2804,7 @@ input:focus, textarea:focus {
   .onecourse-offer__name {
     padding-left: 25px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center; }
     .onecourse-offer__name span {
       width: max-content;
@@ -2854,7 +2878,12 @@ input:focus, textarea:focus {
     top: -15px; }
   .onecourse-start__button {
     padding: 15px;
-    margin: 0 auto 20px; }
+    margin: 0 auto 20px;
+    box-shadow: none;
+    border: 1px solid transparent; }
+    .onecourse-start__button:hover {
+      border: 1px solid #ff9301;
+      background: #69c925; }
   .onecourse-start__date {
     text-transform: uppercase;
     font-size: 20px;
@@ -2866,39 +2895,39 @@ input:focus, textarea:focus {
       width: 80px; }
   .onecourse-start__textmob {
     display: none; }
-.onecourse-underfooter {
-  background: url(../img/underfooter/underfooter-bg.png) center no-repeat;
+.onecourse-auth {
+  background: url(../img/auth/auth-bg.png) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   padding: 30px 0; }
-  .onecourse-underfooter__subtitle {
+  .onecourse-auth__subtitle {
     margin-bottom: 10px;
     text-align: center;
     font-size: 18px; }
-  .onecourse-underfooter__title {
+  .onecourse-auth__title {
     margin-bottom: 30px; }
-    .onecourse-underfooter__title::after, .onecourse-underfooter__title::before {
+    .onecourse-auth__title::after, .onecourse-auth__title::before {
       width: 50px; }
-  .onecourse-underfooter__blocks {
+  .onecourse-auth__blocks {
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px; }
-  .onecourse-underfooter__block {
+  .onecourse-auth__block {
     text-align: center;
     width: 290px; }
-  .onecourse-underfooter__name {
+  .onecourse-auth__name {
     margin-bottom: 15px;
     font-size: 18px; }
-  .onecourse-underfooter__img img {
+  .onecourse-auth__img img {
     width: 120px; }
-  .onecourse-underfooter__oldnum {
+  .onecourse-auth__oldnum {
     height: 40px;
     font-size: 25px;
     color: #49984c;
     font-weight: 700;
     font-weight: bold;
     position: relative; }
-    .onecourse-underfooter__oldnum-course::after {
+    .onecourse-auth__oldnum-course::after {
       content: "";
       position: absolute;
       width: 100px;
@@ -2907,18 +2936,18 @@ input:focus, textarea:focus {
       transform: translate(-50%, -50%);
       height: 2px;
       background: red; }
-  .onecourse-underfooter__num {
+  .onecourse-auth__num {
     margin-top: -15px;
     font-weight: 700;
     font-weight: bold;
     font-size: 45px;
     color: #49984c; }
-    .onecourse-underfooter__num-course {
+    .onecourse-auth__num-course {
       color: #ff9301; }
-  .onecourse-underfooter__button {
+  .onecourse-auth__button {
     margin: 40px auto 20px;
     padding: 15px; }
-  .onecourse-underfooter__date {
+  .onecourse-auth__date {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -3014,9 +3043,9 @@ input:focus, textarea:focus {
   .onecourse-titles {
     padding-top: 30px; }
   .onecourse-video {
-    margin-bottom: 80px; }
+    margin-bottom: 60px; }
     .onecourse-video__block {
-      left: 70%; }
+      left: 80%; }
   .onecourse-offer {
     padding: 5px;
     bottom: -30px; }
@@ -3078,13 +3107,13 @@ input:focus, textarea:focus {
       top: 60%; }
       .onecourse-video__block svg {
         width: 60px; }
-  .onecourse-underfooter__title::after, .onecourse-underfooter__title::before {
+  .onecourse-auth__title::after, .onecourse-auth__title::before {
     width: 25px; }
-  .onecourse-underfooter__oldnum {
+  .onecourse-auth__oldnum {
     font-size: 20px; }
-    .onecourse-underfooter__oldnum-course::after {
+    .onecourse-auth__oldnum-course::after {
       top: 40%; }
-  .onecourse-underfooter__num {
+  .onecourse-auth__num {
     font-size: 30px; } }
 @media screen and (max-width: 575px) {
   .onecourse-titles {
@@ -3094,25 +3123,29 @@ input:focus, textarea:focus {
     .onecourse-video__block svg {
       width: 100px; }
   .onecourse-offer__name {
-    padding-left: 0; }
+    text-align: left;
+    width: auto;
+    padding-left: 10px; }
+  .onecourse-offer__wrapper-mob {
+    padding: 0; }
   .onecourse-start__title img {
     width: 60px; }
   .onecourse-start__title span {
     font-size: 21px; }
-  .onecourse-underfooter__img img {
+  .onecourse-auth__img img {
     width: 80px; }
-  .onecourse-underfooter__name {
+  .onecourse-auth__name {
     height: 50px;
     line-height: 1.2;
     display: flex;
     align-items: center;
     justify-content: center; }
-  .onecourse-underfooter__num {
+  .onecourse-auth__num {
     margin-top: -20px;
     font-size: 24px; }
-  .onecourse-underfooter__oldnum {
+  .onecourse-auth__oldnum {
     font-size: 18px; }
-    .onecourse-underfooter__oldnum-course::after {
+    .onecourse-auth__oldnum-course::after {
       top: 30%;
       width: 70px; } }
 @media screen and (max-width: 450px) {
@@ -3182,7 +3215,6 @@ input:focus, textarea:focus {
     line-height: 1.2;
     border-radius: 30px;
     border: 2px solid #69c925;
-    box-shadow: 3px 3px 13px -2px #000;
     font-weight: bold;
     font-weight: 700;
     overflow: hidden;
@@ -3200,10 +3232,10 @@ input:focus, textarea:focus {
       transition: background 0.3s; }
     .testq-button:hover {
       color: #fff;
-      background: #ff9301;
-      border: 2px solid #49984c; }
+      background: #69c925;
+      border: 2px solid #ff9301; }
       .testq-button:hover::before {
-        background: #49984c; }
+        background: #ff9301; }
   .testq-current {
     margin-bottom: 10px; }
   .testq-steps {
