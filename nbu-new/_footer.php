@@ -92,16 +92,16 @@
 <div class="footer-bottom">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-7 order-1 order-md-0 text-center text-md-left">
+      <div class="col-12 text-center">
         <div class="footer-bottom__left">
           NBU © 2001-2019  <span>Все права защищены.</span>
         </div>
       </div>
-      <div class="col-lg-4 col-md-5 text-md-right order-0 order-md-1 text-center mb-3 mb-md-0">
-        <a class="footer-bottom__right" href="">
-          ОТЗЫВЫ ОБ ОБУЧЕНИИ В NBU
-        </a>
-      </div>
+<!--      <div class="col-lg-4 col-md-5 text-md-right order-0 order-md-1 text-center mb-3 mb-md-0">-->
+<!--        <a class="footer-bottom__right" href="">-->
+<!--          ОТЗЫВЫ ОБ ОБУЧЕНИИ В NBU-->
+<!--        </a>-->
+<!--      </div>-->
     </div>
   </div>
 </div>

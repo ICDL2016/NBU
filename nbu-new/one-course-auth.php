@@ -47,7 +47,7 @@
           <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>
           <div class="prof-offer__name onecourse-offer__name">
             <img src="img/one-course/icon.png" alt="icon">
-            <span>УПРАВЛЕНИЕ В СФЕРЕ ГОСТИНИЧНО-РЕСТОРАННОГО БИЗНЕСА И ТУРИЗМА</span>
+            <span>Маркетинговые исследования</span>
           </div>
           <div class="button onecourse-button video-button">Начать обучение бесплатно</div>
           <div class="prof-date onecourse-date">Сегодня 08.09.2019</div>
@@ -63,10 +63,49 @@
       <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>
       <div class="prof-offer__name onecourse-offer__name">
         <img src="img/one-course/icon.png" alt="icon">
-        <span>УПРАВЛЕНИЕ В СФЕРЕ ГОСТИНИЧНО-РЕСТОРАННОГО БИЗНЕСА И ТУРИЗМА</span>
+        <span>Маркетинговые исследования</span>
       </div>
       <div class="button onecourse-button video-button">Начать обучение бесплатно</div>
       <div class="prof-date onecourse-date">Сегодня 08.09.2019</div>
+    </div>
+  </div>
+
+  <div class="onecourse-auth">
+    <div class="container">
+      <div class="onecourse-auth__subtitle">Курс обучения</div>
+      <div class="title onecourse-auth__title">Маркетинговые исследования</div>
+
+      <div class="onecourse-auth__blocks">
+        <div class="onecourse-auth__block">
+          <div class="onecourse-auth__name">Частей и тестов</div>
+          <div class="onecourse-auth__img">
+            <img src="img/auth/1.png" alt="icon">
+          </div>
+          <div class="onecourse-auth__oldnum"></div>
+          <div class="onecourse-auth__num">12</div>
+        </div>
+
+        <div class="onecourse-auth__block">
+          <div class="onecourse-auth__name">Объем курса</div>
+          <div class="onecourse-auth__img">
+            <img src="img/auth/2.png" alt="icon">
+          </div>
+          <div class="onecourse-auth__oldnum"></div>
+          <div class="onecourse-auth__num">60 ч.</div>
+        </div>
+
+        <div class="onecourse-auth__block">
+          <div class="onecourse-auth__name">Стоимость курса</div>
+          <div class="onecourse-auth__img">
+            <img src="img/auth/3.png" alt="icon">
+          </div>
+          <div class="onecourse-auth__oldnum onecourse-auth__oldnum-course">59000</div>
+          <div class="onecourse-auth__num onecourse-auth__num-course">29400 р.</div>
+        </div>
+      </div>
+
+      <div class="button video-button onecourse-auth__button">Начать обучение бесплатно</div>
+      <div class="onecourse-auth__date">Сегодня 25.04.2019</div>
     </div>
   </div>
 
@@ -214,6 +253,46 @@
 
 <?php require_once '_footer.php'; ?>
 <?php require_once '_reviews.php'; ?>
+
+<div class="onecourse-auth">
+  <div class="container">
+    <div class="onecourse-auth__subtitle">Курс обучения</div>
+    <div class="title onecourse-auth__title">Маркетинговые исследования</div>
+
+    <div class="onecourse-auth__blocks">
+      <div class="onecourse-auth__block">
+        <div class="onecourse-auth__name">Частей и тестов</div>
+        <div class="onecourse-auth__img">
+          <img src="img/auth/1.png" alt="icon">
+        </div>
+        <div class="onecourse-auth__oldnum"></div>
+        <div class="onecourse-auth__num">12</div>
+      </div>
+
+      <div class="onecourse-auth__block">
+        <div class="onecourse-auth__name">Объем курса</div>
+        <div class="onecourse-auth__img">
+          <img src="img/auth/2.png" alt="icon">
+        </div>
+        <div class="onecourse-auth__oldnum"></div>
+        <div class="onecourse-auth__num">60 ч.</div>
+      </div>
+
+      <div class="onecourse-auth__block">
+        <div class="onecourse-auth__name">Стоимость курса</div>
+        <div class="onecourse-auth__img">
+          <img src="img/auth/3.png" alt="icon">
+        </div>
+        <div class="onecourse-auth__oldnum onecourse-auth__oldnum-course">59000</div>
+        <div class="onecourse-auth__num onecourse-auth__num-course">29400 р.</div>
+      </div>
+    </div>
+
+    <div class="button video-button onecourse-auth__button">Начать обучение бесплатно</div>
+    <div class="onecourse-auth__date">Сегодня 25.04.2019</div>
+  </div>
+</div>
+
 
 <?php require_once '_popup.php'; ?>
 <?php require_once '_modal.php'; ?>

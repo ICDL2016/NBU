@@ -161,6 +161,7 @@
 <?php require_once '_menu.php'; ?>
 
 <?php require_once '_footer.php'; ?>
+<?php require_once '_reviews.php'; ?>
 <?php require_once '_popup.php'; ?>
 <?php require_once '_scripts.php'; ?>
   <script>
