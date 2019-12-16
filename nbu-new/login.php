@@ -32,7 +32,7 @@
       <input class="form-input__email login-form__email" type="email" name="email" placeholder="Email*">
       <div class="form-input__span form-input__span-email">Поле "Email" обязательно для заполнения и должно содержать правильный электронный адрес (например, example@mail.ru)</div>
       <input class="form-input__password login-form__password" type="password" name="password" placeholder="Пароль*">
-      <div class="form-input__span form-input__span-email form-input__span-password">Поле "Пароль" обязательно для заполнения и должно содержать правильный электронный адрес (например, example@mail.ru)</div>
+      <div class="form-input__span form-input__span-email form-input__span-password">Поле "Пароль" обязательно для заполнения</div>
       <input class="form-checkbox" type="checkbox" name="checkbox" id="ch1" checked required>
       <label class="form-label" for="ch1">Я принимаю <a href="#">Условия Конфиденциальности</a></label>
       <button class="button login-button">Войти</button>
