@@ -56,40 +56,55 @@
   <div class="title catalog-subtitle">обучения</div>
 </div>
 
-<?php require '_catalog_programms.php'; ?>
-
-<div class="choose-course">
-  <div class="container">
-    <div class="title choose-course__title">Выберите курс обучения</div>
-  </div>
-  <div class="choose-course__blocks">
-    <?php $courses = ['Маркетинговые исследования', 'Управление и организация услуг в сфере маркетинга и рекламы']; ?>
-    <?php for ($i = 0; $i < 6; $i++) : ?>
-      <div class="choose-course__block choose-course__block<?= rand(1, 2); ?> margin-helper"
-           data-program="<?= $i + 1; ?>">
-        <div class="choose-course__descr">
-          <?= $courses[rand(0, 1)] ?>
-        </div>
-      </div>
-      <div class="programs-wrap" data-program="<?= $i + 1; ?>">
-        <div class="programs">
-          <div class="programs-block">
-            <ul class="programs-block__list">
-              <li><a href="">Менеджер по финансам</a></li>
-              <li><a href="">Администратор гостиницы</a></li>
-              <li><a href="">Директор по финансам</a></li>
-              <li><a href="">Менеджер по логистике</a></li>
-              <li><a href="">Директор гостиницы</a></li>
-            </ul>
+<div class="catalog-blocks slider">
+  <?php
+  $arr = ['Журналистика и массовые коммуникации', 'IT-технологии', 'Ресторанный бизнес', 'Кулинария'];
+  for ($i=0; $i<21; $i++) :
+    $svg = 'img/svg/choose-sphere/' . rand(1,4) . '.svg'; ?>
+    <div class="catalog-block margin-helper" data-program="<?=$i+1;?>">
+      <?php require $svg; ?>
+      <div class="choose-sphere__title"><?=$arr[rand(0,3)]?></div>
+    </div>
+    <div class="choose-course catalog-choose__course" data-program="<?=$i+1;?>">
+      <div class="choose-course">
+        <div class="choose-course__blocks">
+          <div class="choose-course__block choose-course__block1">
+            <div class="choose-course__descr">
+              Маркетинговые исследования
+            </div>
+          </div>
+          <div class="choose-course__block choose-course__block2">
+            <div class="choose-course__descr">
+              Управление и организация
+              услуг в сфере маркетинга и рекламы
+            </div>
+          </div>
+          <div class="choose-course__block choose-course__block3">
+            <div class="choose-course__descr">
+              Маркетинговые исследования
+            </div>
+          </div>
+          <div class="choose-course__block choose-course__block4">
+            <div class="choose-course__descr">
+              Маркетинговые исследования
+            </div>
+          </div>
+          <div class="choose-course__block choose-course__block4">
+            <div class="choose-course__descr">
+              Маркетинговые исследования
+            </div>
+          </div>
+          <div class="choose-course__block choose-course__block4">
+            <div class="choose-course__descr">
+              Маркетинговые исследования
+            </div>
           </div>
         </div>
       </div>
-    <?php endfor; ?>
-  </div>
+    </div>
+  <?php endfor; ?>
 </div>
 
-<div class="mt-5"></div>
-<?php require '_catalog_programms.php'; ?>
 <div class="mt-5"></div>
 <?php require_once '_knowledge.php'; ?>
 <div class="mt-5"></div>
@@ -180,22 +195,28 @@
     }
 
     // блоки
-    let directionsBlock = document.querySelectorAll('.choose-course__block');
+    let directionsBlock = document.querySelectorAll('.catalog-block');
 
     for (let i = 0; i < directionsBlock.length; i++) {
         directionsBlock[i].addEventListener('click', function () {
 
-            $('.programs-wrap[data-program!=' + $(this).attr('data-program') + ']').hide();
-            $('.choose-course__block[data-program!=' + $(this).attr('data-program') + ']').removeClass('course-orange').addClass('margin-helper');
+            $('.catalog-choose__course[data-program!=' + $(this).attr('data-program') + ']').removeClass('opacity');
+            $('.catalog-block[data-program!=' + $(this).attr('data-program') + ']').addClass('margin-helper').removeClass('catalog-block__hover');
+            $('.catalog-choose__course[data-program=' + $(this).attr('data-program') + ']').toggleClass('opacity').fadeToggle();
+            $(this).toggleClass('margin-helper');
+            $(this).toggleClass('catalog-block__hover');
 
-            let directionsTop = document.querySelector('.choose-course__blocks').getBoundingClientRect().top;
+            let directionsTop = document.querySelector('.catalog-blocks').getBoundingClientRect().top;
             let blockTop = this.getBoundingClientRect().top;
             let marginFromTop = blockTop - directionsTop;
-            this.classList.toggle('course-orange');
-            this.classList.toggle('margin-helper');
 
-            $('.programs-wrap[data-program=' + $(this).attr('data-program') + ']').css('top', +marginFromTop + 183 + 'px').toggle();
-            let blockHeight = $('.programs-wrap[data-program=' + $(this).attr('data-program') + ']').height();
+            let height = 200;
+            if($(window).width() < 507) {
+                height = 120;
+            }
+
+            let blockHeight = $('.catalog-choose__course[data-program=' + $(this).attr('data-program') + ']').height();
+            $('.catalog-choose__course[data-program=' + $(this).attr('data-program') + ']').css('top', +marginFromTop + height + 'px').toggle();
             this.style.marginBottom = blockHeight + 'px';
         });
     }
