@@ -1,4 +1,10 @@
 .catalog
+    &-choose
+        &__course
+            position: absolute
+            opacity: 0
+            display: block!important
+            z-index: -1
     &-video
         &__wrapper
             background: url(../img/catalog/catalog-bg.png) center no-repeat
@@ -21,6 +27,7 @@
         display: flex
         flex-wrap: wrap
         justify-content: flex-start
+        position: relative
     &-block
         margin: 2px
         display: flex
@@ -36,6 +43,11 @@
         font-size: 19px
         transition: background .3s
         cursor: pointer
+        &__hover
+            color: #fff
+            background: linear-gradient(to left, $light 0, $dark 100%)
+            .fil1
+                fill: white
         svg
             margin-bottom: 15px
             height: 70px
