@@ -159,7 +159,7 @@ input:focus, textarea:focus {
   width: 350px;
   padding: 15px;
   background: #69c925;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   transition: background, 0.3s; }
   .main-form input, .main-form textarea {
     padding: 5px 10px;
@@ -1951,7 +1951,7 @@ input:focus, textarea:focus {
 .catalog-blocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   position: relative; }
 .catalog-block {
   margin: 2px;
@@ -2030,6 +2030,7 @@ input:focus, textarea:focus {
   .catalog-start__title {
     margin-bottom: 200px; }
   .catalog-blocks {
+    margin: auto;
     width: 300px; }
   .catalog-block {
     display: block;
@@ -2042,7 +2043,9 @@ input:focus, textarea:focus {
       height: 45px; }
   .catalog-man__mobile {
     top: -200px;
-    width: 300px; } }
+    width: 300px; }
+  .catalog-choose__course .choose-course__block {
+    width: 295px; } }
 .professions-video__wrapper {
   background: url(../img/prof/prof-bg.png) center no-repeat;
   -webkit-background-size: cover;
@@ -2583,7 +2586,7 @@ input:focus, textarea:focus {
   padding: 10px;
   max-width: 400px;
   background: #49984c;
-  box-shadow: 3px 3px 13px -2px #000;
+  box-shadow: none;
   color: #fff; }
   .prof-offer__mob {
     display: none; }
@@ -2683,7 +2686,10 @@ input:focus, textarea:focus {
   font-size: 20px; }
 
 .test-button {
-  margin: 15px auto; }
+  margin: 15px auto;
+  box-shadow: none; }
+  .test-button:hover {
+    background: #69c925; }
   .test-button span {
     font-weight: 700;
     font-weight: bold;
@@ -2851,7 +2857,7 @@ input:focus, textarea:focus {
   .onecourse-start__img {
     position: absolute;
     right: 100px;
-    top: -5px;
+    bottom: -49px;
     width: 400px; }
   .onecourse-start__subtitle {
     width: max-content;
@@ -2906,10 +2912,8 @@ input:focus, textarea:focus {
   .onecourse-start__button {
     padding: 15px;
     margin: 0 auto 20px;
-    box-shadow: none;
-    border: 1px solid transparent; }
+    box-shadow: none; }
     .onecourse-start__button:hover {
-      border: 1px solid #ff9301;
       background: #69c925; }
   .onecourse-start__date {
     text-transform: uppercase;

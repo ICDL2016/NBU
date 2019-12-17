@@ -56,7 +56,7 @@
   <div class="title catalog-subtitle">обучения</div>
 </div>
 
-<div class="catalog-blocks slider">
+<div class="catalog-blocks">
   <?php
   $arr = ['Журналистика и массовые коммуникации', 'IT-технологии', 'Ресторанный бизнес', 'Кулинария'];
   for ($i=0; $i<21; $i++) :
