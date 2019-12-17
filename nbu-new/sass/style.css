@@ -2318,7 +2318,12 @@ input:focus, textarea:focus {
     margin-bottom: 10px;
     width: 100%; }
   .popup-form__submit {
-    margin: 15px auto; }
+    margin: 15px auto;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+    .popup-form__submit:hover {
+      background: #69c925; }
 
 @media screen and (max-width: 450px) {
   .popup {
