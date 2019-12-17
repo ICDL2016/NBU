@@ -220,5 +220,25 @@
             this.style.marginBottom = blockHeight + 'px';
         });
     }
+
+
+    window.onresize = function() {
+        let programsWrap = document.querySelectorAll('.catalog-choose__course');
+        let directionsBlock = document.querySelectorAll('.catalog-block');
+        for (let i = 0; i < programsWrap.length; i++) {
+            if (+programsWrap[i].style.top.replace('px', '') > 0 && +programsWrap[i].classList.contains('opacity')) {
+                let directionsTop = document.querySelector('.catalog-blocks').getBoundingClientRect().top;
+                let blockTop = directionsBlock[i].getBoundingClientRect().top;
+                let marginFromTop = blockTop - directionsTop;
+                let height = 200;
+                if($(window).width() < 507) {
+                    height = 120;
+                }
+                programsWrap[i].style.top = +marginFromTop + height + 'px';
+                directionsBlock[i].style.marginBottom = getComputedStyle(programsWrap[i]).height;
+                break;
+            }
+        }
+    }
 </script>
 <?php require_once '_end.php'; ?>

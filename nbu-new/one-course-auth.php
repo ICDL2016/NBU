@@ -70,6 +70,7 @@
     </div>
   </div>
 
+  <div class="mt-5"></div>
   <div class="onecourse-auth">
     <div class="container">
       <div class="onecourse-auth__subtitle">Курс обучения</div>

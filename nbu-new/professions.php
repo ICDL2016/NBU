@@ -149,5 +149,20 @@
             current = i;
         });
     }
+
+    window.onresize = function() {
+        let programsWrap = document.querySelectorAll('.programs-wrap');
+        let directionsBlock = document.querySelectorAll('.directions-block');
+        for (let i = 0; i < programsWrap.length; i++) {
+            if (+programsWrap[i].style.top.replace('px', '') > 0) {
+                let directionsTop = document.querySelector('.directions-blocks').getBoundingClientRect().top;
+                let blockTop = directionsBlock[i].getBoundingClientRect().top;
+                let marginFromTop = blockTop - directionsTop;
+                programsWrap[i].style.top = +marginFromTop + 58 + 'px';
+                directionsBlock[i].style.marginBottom = getComputedStyle(programsWrap[i]).height;
+                break;
+            }
+        }
+    }
 </script>
 <?php require_once '_end.php'; ?>

@@ -28,7 +28,7 @@
     &-descr
         margin-bottom: 10px
         color: rgba(#fff, .8)
-        font-size: 13px
+        font-size: 14px
         font-weight: 300
         line-height: 1.2
     &-border
@@ -41,6 +41,20 @@
         left: 0
         background: #fff
 
+@media screen and (min-width: 992px)
+    .study
+        &-block
+            height: auto
+            padding: 20px 6px 20px 4px
+            display: flex
+            flex-direction: column
+            justify-content: center
+        &-descr
+            font-size: 15px
+        &-line
+            height: 100%
+            img
+                height: 100%
 
 @media screen and (max-width: 991px)
     .study
@@ -76,6 +90,7 @@
                 padding: 40px 0 0
                 width: 100%
         &-descr
+            font-size: 13px
             padding: 5px 10px
         &-icon
             svg

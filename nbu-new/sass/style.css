@@ -723,6 +723,12 @@ input:focus, textarea:focus {
       margin-bottom: 10px; }
     .choose-course__descr {
       font-size: 16px; } }
+@media screen and (max-width: 406px) {
+  .choose-course__block {
+    width: 295px;
+    height: 147.5px; }
+  .choose-course__descr {
+    height: 55px; } }
 .diploma {
   background: url(../img/diploma/diploma-bg.png) center no-repeat;
   -webkit-background-size: cover;
@@ -1207,7 +1213,7 @@ input:focus, textarea:focus {
   .study-descr {
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.8);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.2; }
   .study-border {
@@ -1220,6 +1226,19 @@ input:focus, textarea:focus {
     left: 0;
     background: #fff; }
 
+@media screen and (min-width: 992px) {
+  .study-block {
+    height: auto;
+    padding: 20px 6px 20px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .study-descr {
+    font-size: 15px; }
+  .study-line {
+    height: 100%; }
+    .study-line img {
+      height: 100%; } }
 @media screen and (max-width: 991px) {
   .study {
     background: #fff; }
@@ -1251,6 +1270,7 @@ input:focus, textarea:focus {
       padding: 40px 0 0;
       width: 100%; }
   .study-descr {
+    font-size: 13px;
     padding: 5px 10px; }
   .study-icon svg {
     width: 80px;
@@ -2031,7 +2051,7 @@ input:focus, textarea:focus {
     margin-bottom: 200px; }
   .catalog-blocks {
     margin: auto;
-    width: 300px; }
+    width: 400px; }
   .catalog-block {
     display: block;
     padding: 10px;
@@ -2043,9 +2063,10 @@ input:focus, textarea:focus {
       height: 45px; }
   .catalog-man__mobile {
     top: -200px;
-    width: 300px; }
-  .catalog-choose__course .choose-course__block {
-    width: 295px; } }
+    width: 300px; } }
+@media screen and (max-width: 406px) {
+  .catalog-blocks {
+    width: 300px; } }
 .professions-video__wrapper {
   background: url(../img/prof/prof-bg.png) center no-repeat;
   -webkit-background-size: cover;
@@ -2927,7 +2948,7 @@ input:focus, textarea:focus {
   .onecourse-start__textmob {
     display: none; }
 .onecourse-auth {
-  background: url(../img/auth/auth-bg.png) center no-repeat;
+  background: url(../img/auth/underfooter-bg.png) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   padding: 30px 0; }
@@ -2977,7 +2998,10 @@ input:focus, textarea:focus {
       color: #ff9301; }
   .onecourse-auth__button {
     margin: 40px auto 20px;
-    padding: 15px; }
+    padding: 15px;
+    box-shadow: none; }
+    .onecourse-auth__button:hover {
+      background: #69c925; }
   .onecourse-auth__date {
     font-size: 20px;
     text-transform: uppercase;
