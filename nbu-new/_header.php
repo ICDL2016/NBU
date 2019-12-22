@@ -39,8 +39,7 @@
             <div class="header-logo">
                 <a href="index.php">
                     <img src="img/misc/logo.png" alt="logo">
-                    <span class="header-logo__title">НОВЫЙ БИЗНЕС УНИВЕРСИТЕТ</span>
-                    <span class="header-logo__title header-logo__title-eng">NEW BUSINESS UNIVERSITY</span>
+                    <?php require_once 'img/svg/Text.svg';?>
                 </a>
             </div>
             <div class="header-social">
