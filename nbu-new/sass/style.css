@@ -330,9 +330,16 @@ input:focus, textarea:focus {
   padding: 12px 0; }
   .header-logo {
     text-align: center; }
-    .header-logo a img {
-      margin-bottom: 5px;
-      width: 60px; }
+    .header-logo a {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .header-logo a img {
+        width: 60px; }
+      .header-logo a svg {
+        width: 175px; }
+        .header-logo a svg .fil1 {
+          fill: #49984c; }
     .header-logo__title {
       display: block;
       color: #49984c;
@@ -458,6 +465,9 @@ input:focus, textarea:focus {
     margin-left: 0; }
   .header-logo {
     margin-left: 25px; }
+    .header-logo a svg {
+      width: 120px;
+      height: 25px; }
     .header-logo a img {
       width: 50px; }
     .header-logo__title {
