@@ -2624,7 +2624,14 @@ input:focus, textarea:focus {
   background: #49984c;
   box-shadow: none;
   color: #fff; }
+  .prof-offer__underVideo {
+    padding: 0 !important;
+    display: none; }
+    .prof-offer__underVideo .prof-offer {
+      margin: auto; }
   .prof-offer__mob {
+    position: relative;
+    margin-top: -1px;
     display: none; }
   .prof-offer__wrapper {
     padding-top: 70px; }
@@ -2748,8 +2755,14 @@ input:focus, textarea:focus {
     .prof-offer__wrapper {
       padding-top: 398px; }
     .prof-offer__mob {
-      margin-top: -2px;
-      display: block; }
+      margin-top: -1px;
+      display: block;
+      max-width: 100%; }
+      .prof-offer__mob .prof-offer__name {
+        text-align: center;
+        padding-left: 0; }
+        .prof-offer__mob .prof-offer__name::before {
+          display: none; }
     .prof-offer__desc {
       display: none; }
   .prof-title {
@@ -2863,6 +2876,11 @@ input:focus, textarea:focus {
   position: absolute;
   bottom: -15px;
   padding: 30px 5px; }
+  .onecourse-offer__wrapper-videoOn {
+    display: none; }
+    .onecourse-offer__wrapper-videoOn .onecourse-offer {
+      margin: auto;
+      position: static; }
   .onecourse-offer__wrapper-mob {
     display: none; }
   .onecourse-offer__title {
@@ -3112,10 +3130,8 @@ input:focus, textarea:focus {
     width: 50px; }
   .onecourse-titles {
     padding-top: 30px; }
-  .onecourse-video {
-    margin-bottom: 60px; }
-    .onecourse-video__block {
-      left: 80%; }
+  .onecourse-video__block {
+    left: 80%; }
   .onecourse-offer {
     padding: 5px;
     bottom: -30px; }
@@ -3160,9 +3176,16 @@ input:focus, textarea:focus {
   .onecourse-choose__title::before {
     left: 0; }
   .onecourse-offer__mob {
+    max-width: 100%;
     bottom: auto;
     position: relative; }
   .onecourse-offer__wrapper-mob {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-top: -1px;
     display: block; }
   .onecourse-offer__wrapper-desc {
     display: none; }

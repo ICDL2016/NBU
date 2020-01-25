@@ -15,7 +15,14 @@
         background: $dark
         box-shadow: none
         color: #fff
+        &__underVideo
+            padding: 0!important
+            display: none
+            .prof-offer
+                margin: auto
         &__mob
+            position: relative
+            margin-top: -1px
             display: none
         &__wrapper
             padding-top: 70px
@@ -145,8 +152,14 @@
             &__wrapper
                 padding-top: 398px
             &__mob
-                margin-top: -2px
+                margin-top: -1px
                 display: block
+                max-width: 100%
+                .prof-offer__name
+                    text-align: center
+                    padding-left: 0
+                    &::before
+                        display: none
             &__desc
                 display: none
         &-title

@@ -67,6 +67,11 @@
         bottom: -15px
         padding: 30px 5px
         &__wrapper
+            &-videoOn
+                display: none
+                .onecourse-offer
+                    margin: auto
+                    position: static
             &-mob
                 display: none
         &__title
@@ -331,7 +336,7 @@
         &-titles
             padding-top: 30px
         &-video
-            margin-bottom: 60px
+            //margin-bottom: 60px
             &__block
                 left: 80%
         &-offer
@@ -385,10 +390,17 @@
 
         &-offer
             &__mob
+                max-width: 100%
                 bottom: auto
                 position: relative
             &__wrapper
                 &-mob
+                    max-width: 100%
+                    width: 100%
+                    padding-left: 0
+                    padding-right: 0
+                    position: relative
+                    margin-top: -1px
                     display: block
                 &-desc
                     display: none
