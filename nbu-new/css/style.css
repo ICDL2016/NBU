@@ -2626,8 +2626,16 @@ input:focus, textarea:focus {
   color: #fff; }
   .prof-offer__underVideo {
     padding: 0 !important;
-    display: none; }
+    display: none;
+    width: 100%;
+    max-width: 100%; }
+    .prof-offer__underVideo .prof-offer__name {
+      text-align: center;
+      padding-left: 0; }
+      .prof-offer__underVideo .prof-offer__name::before {
+        display: none; }
     .prof-offer__underVideo .prof-offer {
+      max-width: 100%;
       margin: auto; }
   .prof-offer__mob {
     position: relative;
@@ -2877,8 +2885,11 @@ input:focus, textarea:focus {
   bottom: -15px;
   padding: 30px 5px; }
   .onecourse-offer__wrapper-videoOn {
+    padding: 0;
+    max-width: 100%;
     display: none; }
     .onecourse-offer__wrapper-videoOn .onecourse-offer {
+      max-width: 100%;
       margin: auto;
       position: static; }
   .onecourse-offer__wrapper-mob {
