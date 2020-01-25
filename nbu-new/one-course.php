@@ -58,6 +58,8 @@
     <div id="divPlayer1"></div>
   </div>
 
+<?php require_once '_offer-underVideo.php'; ?>
+
   <div class="container onecourse-offer__wrapper onecourse-offer__wrapper-mob">
     <div class="video-offer prof-offer onecourse-offer onecourse-offer__mob">
       <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>
@@ -262,6 +264,11 @@
           $('.video-wrapper').hide();
           $('#divPlayer1').show();
           $('iframe').css('display', 'block');
+
+          if($(window).width() > 575) {
+            $('.onecourse-offer__wrapper-videoOn').show();
+          }
+
           player1.playVideo();
       }
 

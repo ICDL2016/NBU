@@ -48,6 +48,17 @@
     <div id="divPlayer1"></div>
   </div>
 
+  <div class="container prof-offer__wrapper prof-offer__underVideo">
+    <div class="video-offer prof-offer prof-offer__desc">
+      <div class="prof-offer__title">Пройти</div>
+      <div class="prof-offer__name">Тест на профориентацию</div>
+      <div class="button test-button">Начать тест по <span>профориентации</span></div>
+      <div class="prof-query">Отправить запрос</div>
+      <div class="prof-date">Сегодня 08.09.2019</div>
+    </div>
+
+  </div>
+
   <div class="video-offer prof-offer prof-offer__mob">
     <div class="prof-offer__title">Пройти</div>
     <div class="prof-offer__name">Тест на профориентацию</div>
@@ -160,6 +171,9 @@
           $('#divPlayer1').show();
           $('iframe').css('display', 'block');
           player1.playVideo();
+          if ($(window).width() > 575) {
+              $('.prof-offer__underVideo').show();
+          }
       }
   </script>
 <?php require_once '_end.php'; ?>

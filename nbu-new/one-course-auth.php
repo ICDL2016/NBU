@@ -42,35 +42,35 @@
         <?php require_once 'img/misc/play.svg'; ?>
       </div>
 
-      <div class="container onecourse-offer__wrapper onecourse-offer__wrapper-desc">
-        <div class="video-offer prof-offer onecourse-offer">
-          <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>
-          <div class="prof-offer__name onecourse-offer__name">
-            <img src="img/one-course/icon.png" alt="icon">
-            <span>Маркетинговые исследования</span>
-          </div>
-          <div class="button onecourse-button video-button">Начать обучение бесплатно</div>
-          <div class="prof-date onecourse-date">Сегодня 08.09.2019</div>
-        </div>
-      </div>
+<!--      <div class="container onecourse-offer__wrapper onecourse-offer__wrapper-desc">-->
+<!--        <div class="video-offer prof-offer onecourse-offer">-->
+<!--          <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>-->
+<!--          <div class="prof-offer__name onecourse-offer__name">-->
+<!--            <img src="img/one-course/icon.png" alt="icon">-->
+<!--            <span>Маркетинговые исследования</span>-->
+<!--          </div>-->
+<!--          <div class="button onecourse-button video-button">Начать обучение бесплатно</div>-->
+<!--          <div class="prof-date onecourse-date">Сегодня 08.09.2019</div>-->
+<!--        </div>-->
+<!--      </div>-->
 
     </div>
     <div id="divPlayer1"></div>
   </div>
 
-  <div class="container onecourse-offer__wrapper onecourse-offer__wrapper-mob">
-    <div class="video-offer prof-offer onecourse-offer onecourse-offer__mob">
-      <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>
-      <div class="prof-offer__name onecourse-offer__name">
-        <img src="img/one-course/icon.png" alt="icon">
-        <span>Маркетинговые исследования</span>
-      </div>
-      <div class="button onecourse-button video-button">Начать обучение бесплатно</div>
-      <div class="prof-date onecourse-date">Сегодня 08.09.2019</div>
-    </div>
-  </div>
+<!--  <div class="container onecourse-offer__wrapper onecourse-offer__wrapper-mob">-->
+<!--    <div class="video-offer prof-offer onecourse-offer onecourse-offer__mob">-->
+<!--      <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>-->
+<!--      <div class="prof-offer__name onecourse-offer__name">-->
+<!--        <img src="img/one-course/icon.png" alt="icon">-->
+<!--        <span>Маркетинговые исследования</span>-->
+<!--      </div>-->
+<!--      <div class="button onecourse-button video-button">Начать обучение бесплатно</div>-->
+<!--      <div class="prof-date onecourse-date">Сегодня 08.09.2019</div>-->
+<!--    </div>-->
+<!--  </div>-->
 
-  <div class="mt-5"></div>
+<!--  <div class="mt-5"></div>-->
   <div class="onecourse-auth">
     <div class="container">
       <div class="onecourse-auth__subtitle">Курс обучения</div>

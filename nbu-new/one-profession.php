@@ -42,10 +42,19 @@
           <div class="prof-query">Отправить запрос</div>
           <div class="prof-date">Сегодня 08.09.2019</div>
         </div>
-
       </div>
     </div>
     <div id="divPlayer1"></div>
+  </div>
+
+  <div class="container prof-offer__wrapper prof-offer__underVideo">
+    <div class="video-offer prof-offer prof-offer__desc">
+      <div class="prof-offer__title">Профессия</div>
+      <div class="prof-offer__name">Администратор гостиницы</div>
+      <div class="button prof-button video-button">Получить <span>Официальный диплом</span></div>
+      <div class="prof-query">Отправить запрос</div>
+      <div class="prof-date">Сегодня 08.09.2019</div>
+    </div>
   </div>
 
   <div class="video-offer prof-offer prof-offer__mob">
@@ -161,6 +170,9 @@
           $('#divPlayer1').show();
           $('iframe').css('display', 'block');
           player1.playVideo();
+          if ($(window).width() > 575) {
+              $('.prof-offer__underVideo').show();
+          }
       }
   </script>
 <?php require_once '_end.php'; ?>
