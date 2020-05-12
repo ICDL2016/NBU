@@ -2,12 +2,34 @@
     &-wrapper
         margin: auto
         width: 100%
-        background: url(../img/video/video-bg.png) center no-repeat
+        background: url(../img/video/video-test.jpg) center no-repeat
         -webkit-background-size: cover
         background-size: cover
         background-position-y: 0
         height: 550px
         position: relative
+        overflow: hidden
+    &-overlay
+        position: absolute
+        top: 50%
+        transform: translateY(-50%) rotate(30deg)
+        left: -150px
+        width: 50%
+        height: 300%
+        background: rgba($light, .85)
+        &::after
+            content: ''
+            position: absolute
+            right: -25px
+            width: 15px
+            height: 300%
+            z-index: 2
+            background: rgba($light, .85)
+    .container.pt-md-5
+        position: relative
+        z-index: 2
+        top: 50%
+        transform: translateY(-50%)
     &-block
         content: ''
         position: absolute
@@ -24,21 +46,29 @@
                 .fil1
                     fill: $light
     &-title
+        position: relative
+        z-index: 2
         padding: 2px 10px
         font-family: Constantine, serif
         background: $dark
         color: #fff
         font-size: 40px
+        &__bottom
+            display: none
         &__mob
             display: none
     &-br
         height: 0
     &-button
         margin: 50px 0
+        &__bottom
+            display: none
     &-search
         margin: auto
         width: 400px
         position: relative
+        &__bottom
+            display: none
         input
             width: 400px
             padding: 8px 20px
@@ -55,32 +85,67 @@
             transform: translateY(-50%)
             color: $dark
     &-contacts
+        position: relative
+        z-index: 2
         display: none
 
 #divPlayer1
     display: none
 
+@media screen and (max-width: 1799px)
+    .video .container.pt-md-5
+        transform: none
+        top: 0
 
-@media screen and (max-width: 991px)
+@media screen and (max-width: 1750px)
+    .video
+        &-search
+            &__top
+                display: none
+            &__bottom
+                display: block
+
+@media screen and (max-width: 1450px)
+    .video
+        &-button
+            &__top
+                display: none
+            &__bottom
+                display: block
+
+@media screen and (max-width: 1199px)
     .video
         &-title
             font-size: 30px
+
+@media screen and (max-width: 991px)
+    .video
         &-wrapper
             height: 450px
+        &-block
+            svg
+                width: 70px
+                height: 70px
 
 @media screen and (max-width: 767px)
     .video
         &-title
             font-size: 25px
+            &__top
+                display: none
+            &__bottom
+                display: block
         &-wrapper
             height: 400px
         &-block
-            left: 70%
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
         &-button
             margin: 20px 0 30px
         &-contacts
             margin-bottom: 30px
-            padding: 15px 0
+            padding: 5px 0
             display: flex
             justify-content: space-between
             align-items: center
@@ -110,16 +175,20 @@
 
 @media screen and (max-width: 575px)
     .video
+        &-overlay
+            display: none
         &-wrapper
-            height: 350px
-            background: url(../img/video/video-modile__bg.png) center no-repeat
-            -webkit-background-size: cover
-            background-size: cover
-            -ms-background-position-y: 0
-            background-position-y: 0
+            //height: 350px
+            //background: url(../img/video/video-modile__bg.png) center no-repeat
+            //-webkit-background-size: cover
+            //background-size: cover
+            //-ms-background-position-y: 0
+            //background-position-y: 0
         &-phone
+            a
+                color: $dark
             i
-                color: $light
+                color: $dark
         &-social
             .header-social__link
                 opacity: 1
@@ -138,9 +207,6 @@
             padding: 5px 5px 5px 15px
             margin: 5px auto 10px
         &-block
-            top: 100px
-            left: 50%
-            transform: translateX(-50%)
             svg
                 height: 50px
                 width: 50px

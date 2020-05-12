@@ -1,6 +1,30 @@
 <?php require_once '_header.php'; ?>
 <?php require_once '_video.php'; ?>
 
+<div class="under-video">
+    <div class="container pt-4">
+        <div class="video-titles video-title__bottom showOnPlay" style="text-align: center; margin-bottom: 25px">
+            <span class="video-title">ДИСТАНЦИОННОЕ</span><br>
+            <span class="video-title">ОБУЧЕНИЕ С ВЫДАЧЕЙ</span><br>
+            <span class="video-title video-title__desc">ОФИЦИАЛЬНОГО</span>
+            <div class="video-br"><br></div>
+            <span class="video-title video-title__desc">ДИПЛОМА</span>
+            <span class="video-title video-title__mob">ОФИЦИАЛЬНОГО ДИПЛОМА</span>
+        </div>
+
+        <a class="button video-button show-form__btn video-button__bottom showOnPlay" href="" style="margin: 10px auto 35px">
+            Начать обучение бесплатно
+            <span>сегодня 25.04.2019</span>
+        </a>
+
+        <form class="video-search video-search__bottom showOnPlay">
+            <input type="text" placeholder="Найти курс обучения" name="q" style="border: 2px solid #69c925">
+            <i class="fa fa-search video-search__icon" aria-hidden="true"
+               onclick="document.querySelector('.video-search').submit()"></i>
+        </form>
+    </div>
+</div>
+
 <div class="mt-5"></div>
 <?php require_once '_choose-sphere.php'; ?>
 
@@ -42,6 +66,15 @@
 <?php require_once '_scripts.php'; ?>
 <script>
     //video
+    let canResize = true;
+    $('.video-wrapper').height($('.video-wrapper').width() / 3.5)
+    $(window).resize(function () {
+        if (canResize === true) {
+            $('.video-wrapper').height($('.video-wrapper').width() / 3.5)
+        }
+    });
+
+
     var tag = document.createElement('script');
 
     tag.src = "https://www.youtube.com/iframe_api";
@@ -81,6 +114,8 @@
     }
 
     function play1(event) {
+        canResize = false;
+        $('.showOnPlay').show().css('display', 'block');
         $('.video-wrapper').hide();
         $('#divPlayer1').show();
         $('iframe').css('display', 'block');
