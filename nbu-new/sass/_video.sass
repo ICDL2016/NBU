@@ -25,17 +25,19 @@
             height: 300%
             z-index: 2
             background: rgba($light, .85)
-    .container.pt-md-5
-        position: relative
+    .container.pt-md-4
+        position: absolute
         z-index: 2
         top: 50%
-        transform: translateY(-50%)
+        left: 50%
+        transform: translate(-50%, -50%)
     &-block
         content: ''
         position: absolute
         top: 54%
         left: 60%
         cursor: pointer
+        z-index: 3
         svg
             width: 100px
             height: 100px
