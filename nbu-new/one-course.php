@@ -38,7 +38,7 @@
 
       </div>
 
-      <div class="video-block prof-video__block onecourse-video__block" onclick="play1(event)">
+      <div class="video-block prof-video__block onecourse-video__block">
         <?php require_once 'img/misc/play.svg'; ?>
       </div>
 

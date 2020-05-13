@@ -35,7 +35,7 @@
 
         </div>
 
-        <div class="video-block catalog-video__block" onclick="play1(event)">
+        <div class="video-block catalog-video__block">
             <?php require_once 'img/misc/play.svg'; ?>
         </div>
 
