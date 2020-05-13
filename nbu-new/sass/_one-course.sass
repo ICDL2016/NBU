@@ -51,14 +51,10 @@
             &::before, &::after
                 display: none
     &-video
-        &__wrapper
-            background: url(../img/one-course/one-course.png) center no-repeat
-            -webkit-background-size: cover
-            background-size: cover
         &__title
             font-size: 30px
     &-titles
-        padding-top: 70px
+        padding-top: 20px
     &-title
         padding-top: 50px
     &-offer
@@ -308,6 +304,31 @@
             color: $dark
             text-decoration: underline
 
+@media screen and (max-width: 1750px)
+    .onecourse
+        &-titles
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 2
+        &-offer
+            &__mob
+                position: static
+                display: block
+                max-width: 100%
+            &__wrapper
+                &-desc
+                    display: none
+                &-mob
+                    display: block
+                    max-width: 900px
+                    position: static
+
+
+
+
+
+
 @media screen and (max-width: 1509px)
     .study-programm
         width: 1210px
@@ -328,6 +349,9 @@
         &__title
             &::before, &::after
                 width: 25px
+
+
+
 
 @media screen and (max-width: 991px)
     .onecourse
@@ -390,24 +414,8 @@
                     right: 0
                 &::before
                     left: 0
-
-        &-offer
-            &__mob
-                max-width: 100%
-                bottom: auto
-                position: relative
-            &__wrapper
-                &-mob
-                    max-width: 100%
-                    width: 100%
-                    padding-left: 0
-                    padding-right: 0
-                    position: relative
-                    margin-top: -1px
-                    display: block
-                &-desc
-                    display: none
         &-titles
+            display: none
             padding-top: 0
         &-video
             margin-bottom: 0
@@ -416,9 +424,10 @@
                 margin-bottom: 0
             &__block
                 left: 50%
-                top: 60%
+                top: 50%
+                transform: translate(-50%, -50%)
                 svg
-                    width: 60px
+                    width: 40px
         &-auth
             &__title
                 &::after, &::before
@@ -437,16 +446,6 @@
     .onecourse
         &-titles
             display: none
-        &-video
-            &__wrapper
-                background: url(../img/one-course/one-course-mob.png) center no-repeat
-                -webkit-background-size: cover
-                background-size: cover
-                background-position-x: 70%
-            &__block
-                top: 50%
-                svg
-                    width: 100px
         &-offer
             &__name
                 text-align: left

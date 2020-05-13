@@ -1,15 +1,8 @@
 .prof
-    &-video
-        &__wrapper
-            background: url(../img/one-prof/one-prof-bg.png) center no-repeat
-            -webkit-background-size: cover
-            background-size: cover
-            height: 400px
-        &__block
-            left: 60%
-            top: 50%
-            transform: translate(-50%, -50%)
     &-offer
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
         padding: 10px
         max-width: 400px
         background: $dark
@@ -29,9 +22,16 @@
                 max-width: 100%
                 margin: auto
         &__mob
-            position: relative
-            margin-top: -1px
             display: none
+            position: static
+            transform: none
+            margin: -1px auto 0
+            max-width: 930px
+            .prof-offer__name
+                text-align: center
+                padding-left: 0
+                &::before
+                    display: none
         &__wrapper
             padding-top: 70px
         &__title
@@ -152,22 +152,19 @@
     .prof
         &-video
             &__block
+                top: 50%
                 left: 50%
+                transform: translate(-50%, -50%)
+                svg
+                    width: 40px
             &__wrapper
                 background-position-x: 60%
         &-offer
             margin: auto
+            &__mob
+                display: block
             &__wrapper
                 padding-top: 398px
-            &__mob
-                margin-top: -1px
-                display: block
-                max-width: 100%
-                .prof-offer__name
-                    text-align: center
-                    padding-left: 0
-                    &::before
-                        display: none
             &__desc
                 display: none
         &-title
@@ -211,16 +208,6 @@
                 text-align: center
                 &::before
                     display: none
-        &-video
-            &__wrapper
-                background: url(../img/one-prof/prof-bg-mob.png) center no-repeat
-                -webkit-background-size: cover
-                background-size: cover
-                height: 300px
-            &__block
-                svg
-                    width: 80px
-                    height: 80px
         &-title
             &::before
                 left: -15px
