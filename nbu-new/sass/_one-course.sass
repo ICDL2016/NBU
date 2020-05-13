@@ -55,13 +55,24 @@
             font-size: 30px
     &-titles
         padding-top: 20px
+        &__auth
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 2
     &-title
         padding-top: 50px
     &-offer
+        top: auto
+        transform: none
         max-width: 500px
         position: absolute
         bottom: -15px
         padding: 30px 5px
+        &__mob
+            max-width: 930px
+            position: static
+
         &__wrapper
             &-videoOn
                 padding: 0

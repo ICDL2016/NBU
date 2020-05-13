@@ -77,7 +77,7 @@
 
 <?php require_once '_offer-underVideo.php'; ?>
 
-<div class="container onecourse-offer__wrapper onecourse-offer__wrapper-mob">
+<div class="container onecourse-offer__wrapper onecourse-offer__wrapper-mob showOnPlay">
     <div class="video-offer prof-offer onecourse-offer onecourse-offer__mob">
         <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>
         <div class="prof-offer__name onecourse-offer__name">
