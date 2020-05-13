@@ -33,7 +33,7 @@
 
         </div>
 
-        <div class="video-block" onclick="play1(event)">
+        <div class="video-block">
             <?php require_once 'img/misc/play.svg'; ?>
         </div>
 
