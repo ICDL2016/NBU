@@ -56,3 +56,5 @@
   <div class="mt-5"></div>
 <?php require_once '_menu.php'; ?>
 <?php require_once '_footer.php'; ?>
+<?php require_once '_scripts.php'; ?>
+<?php require_once '_end.php'; ?>
