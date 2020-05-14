@@ -70,7 +70,7 @@
         bottom: -15px
         padding: 30px 5px
         &__mob
-            max-width: 930px
+            max-width: 100%
             position: static
 
         &__wrapper
@@ -83,6 +83,8 @@
                     margin: auto
                     position: static
             &-mob
+                max-width: 100%
+                position: static
                 display: none
         &__title
             margin: 0 auto 10px
@@ -332,8 +334,7 @@
                     display: none
                 &-mob
                     display: block
-                    max-width: 900px
-                    position: static
+
 
 
 
@@ -374,7 +375,6 @@
         &-titles
             padding-top: 30px
         &-video
-            //margin-bottom: 60px
             &__block
                 left: 80%
         &-offer
@@ -437,8 +437,7 @@
                 left: 50%
                 top: 50%
                 transform: translate(-50%, -50%)
-                svg
-                    width: 40px
+
         &-auth
             &__title
                 &::after, &::before
@@ -455,6 +454,11 @@
 
 @media screen and (max-width: 575px)
     .onecourse
+        &-video
+            &__block
+                svg
+                    width: 50px
+                    height: 50px
         &-titles
             display: none
         &-offer

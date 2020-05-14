@@ -30,9 +30,11 @@
             </div>
 
             <div class="video-titles onecourse-titles onecourse-titles__auth">
-                <span class="video-title onecourse-video__title">ДИСТАНЦИОННОЕ</span><br>
-                <span class="video-title onecourse-video__title">ОБУЧЕНИЕ С ВЫДАЧЕЙ</span><br>
-                <span class="video-title video-title__desc onecourse-video__title">ОФИЦИАЛЬНОГО ДИПЛОМА</span>
+                <span class="video-title">ДИСТАНЦИОННОЕ</span><br>
+                <span class="video-title">ОБУЧЕНИЕ С ВЫДАЧЕЙ</span><br>
+                <span class="video-title video-title__desc">ОФИЦИАЛЬНОГО</span>
+                <div class="video-br"><br></div>
+                <span class="video-title video-title__desc">ДИПЛОМА</span>
                 <span class="video-title video-title__mob">ОФИЦИАЛЬНОГО ДИПЛОМА</span>
             </div>
 

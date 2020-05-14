@@ -30,9 +30,11 @@
             </div>
 
             <div class="video-titles onecourse-titles">
-                <span class="video-title onecourse-video__title">ДИСТАНЦИОННОЕ</span><br>
-                <span class="video-title onecourse-video__title">ОБУЧЕНИЕ С ВЫДАЧЕЙ</span><br>
-                <span class="video-title video-title__desc onecourse-video__title">ОФИЦИАЛЬНОГО ДИПЛОМА</span>
+                <span class="video-title">ДИСТАНЦИОННОЕ</span><br>
+                <span class="video-title">ОБУЧЕНИЕ С ВЫДАЧЕЙ</span><br>
+                <span class="video-title video-title__desc">ОФИЦИАЛЬНОГО</span>
+                <div class="video-br"><br></div>
+                <span class="video-title video-title__desc">ДИПЛОМА</span>
                 <span class="video-title video-title__mob">ОФИЦИАЛЬНОГО ДИПЛОМА</span>
             </div>
 
@@ -62,6 +64,20 @@
     <div id="divPlayer1"></div>
 </div>
 
+<?php require_once '_offer-underVideo.php'; ?>
+
+<div class="onecourse-offer__wrapper onecourse-offer__wrapper-mob showOnPlay">
+    <div class="video-offer prof-offer onecourse-offer onecourse-offer__mob">
+        <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>
+        <div class="prof-offer__name onecourse-offer__name">
+            <img src="img/one-course/icon.png" alt="icon">
+            <span>УПРАВЛЕНИЕ В СФЕРЕ ГОСТИНИЧНО-РЕСТОРАННОГО БИЗНЕСА И ТУРИЗМА</span>
+        </div>
+        <div class="button onecourse-button video-button">Начать обучение бесплатно</div>
+        <div class="prof-date onecourse-date">Сегодня 08.09.2019</div>
+    </div>
+</div>
+
 <div class="under-video">
     <div class="container pt-4">
         <div class="video-titles video-title__bottom showOnPlay" style="text-align: center; margin-bottom: 25px">
@@ -72,20 +88,6 @@
             <span class="video-title video-title__desc">ДИПЛОМА</span>
             <span class="video-title video-title__mob">ОФИЦИАЛЬНОГО ДИПЛОМА</span>
         </div>
-    </div>
-</div>
-
-<?php require_once '_offer-underVideo.php'; ?>
-
-<div class="container onecourse-offer__wrapper onecourse-offer__wrapper-mob showOnPlay">
-    <div class="video-offer prof-offer onecourse-offer onecourse-offer__mob">
-        <div class="prof-offer__title onecourse-offer__title">Курс обучения</div>
-        <div class="prof-offer__name onecourse-offer__name">
-            <img src="img/one-course/icon.png" alt="icon">
-            <span>УПРАВЛЕНИЕ В СФЕРЕ ГОСТИНИЧНО-РЕСТОРАННОГО БИЗНЕСА И ТУРИЗМА</span>
-        </div>
-        <div class="button onecourse-button video-button">Начать обучение бесплатно</div>
-        <div class="prof-date onecourse-date">Сегодня 08.09.2019</div>
     </div>
 </div>
 
