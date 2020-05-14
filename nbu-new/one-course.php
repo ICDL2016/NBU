@@ -44,7 +44,7 @@
 
         </div>
 
-        <div class="video-block prof-video__block onecourse-video__block">
+        <div class="video-block onecourse-video__block">
             <?php require_once 'img/misc/play.svg'; ?>
         </div>
 
