@@ -117,8 +117,7 @@
             <div class="col-lg-8 offset-lg-1">
                 <div class="prof-prev">Профессия</div>
                 <div class="start-title prof-title">
-            <span>Администратор <br>
-            гостиницы</span>
+            <span>Директор по маркетингу</span>
                 </div>
 
                 <div class="start-block prof-block">
